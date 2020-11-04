@@ -1,0 +1,2539 @@
+<?xml version="1.0"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/">
+  <zs:version>1.1</zs:version>
+  <zs:numberOfRecords>10000</zs:numberOfRecords>
+  <zs:records>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>2000 sustainable dryland agroecosystem management</title>
+          </titleInfo>
+          <titleInfo type="alternative">
+            <title>Sustainable dryland agroecosystem management</title>
+          </titleInfo>
+          <name type="personal">
+            <namePart>Peterson, Gary</namePart>
+            <namePart type="date">1940-</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>Colorado Agricultural Experiment Station</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>Colorado State University</namePart>
+            <namePart>Department of Soil and Crop Sciences.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Great Plains Systems Research Unit.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>Colorado State University</namePart>
+            <namePart>Department of Bioagrocultural Sciences and Pest Management.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">bibliography</genre>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">cou</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Fort Collins, Colo</placeTerm>
+            </place>
+            <publisher>Colorado State University, Agriculture Experiment Station, Dept. of Soil and
+              Crop Sciences : Dept. of Bioagricultural Sciences and Pest Management</publisher>
+            <publisher>USDA/ARS Natural Resources Research Center</publisher>
+            <dateIssued>[2000]</dateIssued>
+            <dateIssued encoding="marc">2000</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>iii, 83 p. : ill. ; 28 cm.</extent>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">G.A. Peterson ... [et
+            al.].</note>
+          <note>"A cooperative project of the Colorado Agricultural Experiment Station, Department
+            of Soil and Crop Sciences, Department of Bioagricultural Sciences and Pest Management,
+            Colorado State University ... and the USDA-Agriculture Research Service, Natural
+            Resources Research Center, Great Plains Systems Research Unit."</note>
+          <note>"October 2000"--Cover.</note>
+          <note type="bibliography">Includes bibliographical references (p. 26-27).</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us-co</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Dry farming</topic>
+            <geographic>Colorado</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Arid regions agriculture</topic>
+            <geographic>Colorado</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Cropping systems</topic>
+            <geographic>Colorado</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Soil management</topic>
+            <geographic>Colorado</geographic>
+          </subject>
+          <classification authority="lcc">SB110 .A17 2000</classification>
+          <classification authority="ddc" edition="21">631.5/86/09788</classification>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>Technical bulletin (Colorado Agricultural Experiment Station : 1991) ;
+                TB00-3</title>
+            </titleInfo>
+          </relatedItem>
+          <identifier type="lccn">2001315652</identifier>
+          <identifier type="oclc">ocm45370601</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DDB</recordContentSource>
+            <recordCreationDate encoding="marc">010221</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130524131839.0</recordChangeDate>
+            <recordIdentifier>12317253</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>11</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>2001 sustainable dryland agroecosystem management</title>
+          </titleInfo>
+          <titleInfo type="alternative">
+            <title>Sustainable dryland agroecosystem management</title>
+          </titleInfo>
+          <name type="personal">
+            <namePart>Peterson, Gary</namePart>
+            <namePart type="date">1940-</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>Colorado Agricultural Experiment Station</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>Colorado State University</namePart>
+            <namePart>Department of Soil and Crop Sciences.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Great Plains Systems Research Unit.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>Colorado State University</namePart>
+            <namePart>Department of Bioagrocultural Sciences and Pest Management.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">bibliography</genre>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">cou</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Fort Collins, Colo</placeTerm>
+            </place>
+            <publisher>Colorado Agricultural Experiment Station, Dept. of Soil and Crop Sciences,
+              Dept. of Bioagricultural Sciences and Pest Management, Colorado State
+              University</publisher>
+            <publisher>USDA - Agriculture Research Service, Natural Resources Research Center, Great
+              Plains Systems Research Unit</publisher>
+            <dateIssued>[2001]</dateIssued>
+            <dateIssued encoding="marc">2001</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>iii, 91 p. ; 29 cm.</extent>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">G.A. Peterson ... [et
+            al.].</note>
+          <note>"A cooperative project of the Colorado Agricultural Experiment Station, Department
+            of Soil and Crop Sciences, Department of Bioagricultural Sciences and Pest Management,
+            Colorado State University ... and the USDA-Agriculture Research Service, Natural
+            Resources Research Center, Great Plains Systems Research Unit."</note>
+          <note>"December 2001"--Cover.</note>
+          <note type="bibliography">Includes bibliographical references (p. 84-91).</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us-co</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Dry farming</topic>
+            <geographic>Colorado</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Arid regions agriculture</topic>
+            <geographic>Colorado</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Cropping systems</topic>
+            <geographic>Colorado</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Soil management</topic>
+            <geographic>Colorado</geographic>
+          </subject>
+          <classification authority="lcc">S616.U6 A15 2001</classification>
+          <classification authority="ddc" edition="22">631.5/86/09788</classification>
+          <location>
+            <url displayLabel="electronic resource" usage="primary display"
+              >http://www.colostate.edu/Depts/AES/Pubs/AESPubs%5FTBs.html</url>
+          </location>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>Technical bulletin (Colorado Agricultural Experiment Station : 1991) ;
+                TB01-2</title>
+            </titleInfo>
+          </relatedItem>
+          <identifier type="lccn">2004398411</identifier>
+          <identifier type="oclc">ocm48947900</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DDB</recordContentSource>
+            <recordCreationDate encoding="marc">040618</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130530082139.0</recordChangeDate>
+            <recordIdentifier>13629101</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>12</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>2005 Agricultural Labor Survey</title>
+            <subTitle>interview manual</subTitle>
+          </titleInfo>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, D.C.]</placeTerm>
+            </place>
+            <publisher>The Service</publisher>
+            <dateIssued>[2005]</dateIssued>
+            <dateIssued encoding="marc">2005</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>1v (various paging).</extent>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">United States Department of
+            Agriculture, National Agricultural Statistics Service, Census and Survey Service.</note>
+          <note>"NASS staff report number SAB-03-04"</note>
+          <note>"July 2005."</note>
+          <identifier type="lccn">2006372173</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">060519</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20061130143147.0</recordChangeDate>
+            <recordIdentifier>14382791</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>13</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>2007 farm bill</title>
+            <subTitle>theme papers</subTitle>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">bibliography</genre>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, DC]</placeTerm>
+            </place>
+            <publisher>USDA</publisher>
+            <dateIssued>[2006]</dateIssued>
+            <dateIssued encoding="marc">2006</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>ii, 139 p. : ill., maps ; 28 cm.</extent>
+          </physicalDescription>
+          <tableOfContents>Risk management -- Conservation and the environment -- Rural development
+            -- Energy and agriculture -- Strengthening the foundation for future prosperity in U.S.
+            Agriculture.</tableOfContents>
+          <note>Cover title.</note>
+          <note>"December 2006"--P. [3] of cover.</note>
+          <note type="bibliography">Includes bibliographical references.</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us---</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture and state</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural industries</topic>
+            <topic>Risk management</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Rural development</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural conservation</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture and energy</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <classification authority="lcc">HD1761 .A16 2006</classification>
+          <classification authority="ddc" edition="22">338.1/873</classification>
+          <identifier type="lccn">2007361308</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">070117</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130531140204.0</recordChangeDate>
+            <recordIdentifier>14701036</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>14</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>2016 final record of decision</title>
+            <subTitle>motorized vehicle use on the Rogue River-Siskiyou National Forest</subTitle>
+          </titleInfo>
+          <titleInfo type="alternative">
+            <title>Final record of decision</title>
+            <subTitle>motorized vehicle use on the Rogue River-Siskiyou National Forest</subTitle>
+          </titleInfo>
+          <titleInfo type="alternative">
+            <title>Motorized vehicle use on the Rogue River-Siskiyou National Forest</title>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>Rogue River-Siskiyou National Forest (Agency : U.S.)</namePart>
+            <role>
+              <roleTerm type="text">author.</roleTerm>
+            </role>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">government publication</genre>
+          <genre authority="rdacontent">text</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">oru</placeTerm>
+            </place>
+            <dateIssued encoding="marc">2016</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <originInfo eventType="publication">
+            <place>
+              <placeTerm type="text">Medford, Oregon :</placeTerm>
+            </place>
+            <publisher>United States Department of Agriculture, Rogue River-Siskiyou National
+              Forest,</publisher>
+            <dateIssued>June 2016.</dateIssued>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>1 volume (various pagings) : color maps ; 28 cm + 1 folded color map and CD-ROM
+              (4 3/4 in.)</extent>
+            <form type="media" authority="rdamedia">unmediated</form>
+            <form type="carrier" authority="rdacarrier">volume</form>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">Pacific Northwest Region, Rogue
+            River-Siskiyou National Forest.</note>
+          <note>"Douglas, Klamath, Jackson, Curry, Coos, and Josephine counties in Oregon, Del Norte
+            and Siskiyou counties in California."</note>
+          <note>Print format not distributed to depository libraries.</note>
+          <note type="additional physical form">Also available on the Internet.</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us-or</geographicCode>
+            <geographicCode authority="marcgac">n-us-ca</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Forest management</topic>
+            <geographic>Rogue River-Siskiyou National Forest (Or. and Calif.)</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Motor vehicles</topic>
+            <topic>Environmental aspects</topic>
+            <geographic>Rogue River-Siskiyou National Forest (Or. and Calif.)</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Forest roads</topic>
+            <topic>Environmental aspects</topic>
+            <geographic>Rogue River-Siskiyou National Forest (Or. and Calif.)</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Trails</topic>
+            <topic>Environmental aspects</topic>
+            <geographic>Rogue River-Siskiyou National Forest (Or. and Calif.)</geographic>
+          </subject>
+          <subject authority="fast">
+            <topic>Forest management</topic>
+          </subject>
+          <subject authority="fast">
+            <topic>Forest roads</topic>
+            <topic>Environmental aspects</topic>
+          </subject>
+          <subject authority="fast">
+            <topic>Motor vehicles</topic>
+            <topic>Environmental aspects</topic>
+          </subject>
+          <subject authority="fast">
+            <topic>Trails</topic>
+            <topic>Environmental aspects</topic>
+          </subject>
+          <subject authority="lcsh">
+            <geographic>Rogue River-Siskiyou National Forest (Or. and Calif.)</geographic>
+          </subject>
+          <subject authority="fast">
+            <geographic>United States</geographic>
+            <geographic>Rogue River-Siskiyou National Forest</geographic>
+          </subject>
+          <classification authority="lcc">SD428.R55 A15 2016</classification>
+          <location>
+            <url displayLabel="Map" usage="primary display"
+              >http://a123.g.akamai.net/7/123/11558/abc123/forestservic.download.akamai.com/11558/www/nepa/71306_FSPLT3_3084242.pdf</url>
+          </location>
+          <location>
+            <url displayLabel="electronic resource"
+              >http://a123.g.akamai.net/7/123/11558/abc123/forestservic.download.akamai.com/11558/www/nepa/71306_FSPLT3_3084241.pdf</url>
+          </location>
+          <relatedItem type="otherFormat">
+            <titleInfo>
+              <title>2016 final record of decision, motor vehicle use on the Rogue River-Siskiyou
+                National Forest</title>
+            </titleInfo>
+            <name>
+              <namePart>Rogue River-Siskiyou National Forest (Agency : U.S.).</namePart>
+            </name>
+            <identifier type="local">(OCoLC)992722880</identifier>
+          </relatedItem>
+          <identifier type="lccn">2016388439</identifier>
+          <identifier type="oclc">ocn953797104</identifier>
+          <recordInfo>
+            <descriptionStandard>rda</descriptionStandard>
+            <recordContentSource authority="marcorg">AGL</recordContentSource>
+            <recordCreationDate encoding="marc">160718</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20190225145353.0</recordChangeDate>
+            <recordIdentifier>19180147</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>15</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>21st century agriculture</title>
+            <subTitle>a critical role for science and technology</subTitle>
+          </titleInfo>
+          <titleInfo type="alternative">
+            <title>Twenty-first century agriculture, a critical role for science and
+              technology</title>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, D.C.]</placeTerm>
+            </place>
+            <publisher>United States Dept. of Agriculture</publisher>
+            <dateIssued>[2003]</dateIssued>
+            <dateIssued encoding="marc">2003</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>40 p. : col. ill., col. map ; 28 cm.</extent>
+          </physicalDescription>
+          <note>Cover title.</note>
+          <note>"This report was developed for the International Ministerial Conference and Expo on
+            Agricultural Science and Technology, held June 23-25, 2003, in Sacramento,
+            California"--Pref.</note>
+          <note>Shipping list no.: 2003-0224-P.</note>
+          <note>"June 2003."</note>
+          <note type="additional physical form">Also available via Internet from the USDA web site.
+            Address as of 7/15/03: http://www.usda.gov/news/pdf/agst21stcentury.pdf; current access
+            is available via PURL.</note>
+          <subject>
+            <geographicCode authority="marcgac">d------</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural innovations</topic>
+            <geographic>Developing countries</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture and state</topic>
+            <geographic>Developing countries</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <topic>Technology transfer</topic>
+            <geographic>Developing countries</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Sustainable agriculture</topic>
+            <geographic>Developing countries</geographic>
+            <topic>Research</topic>
+          </subject>
+          <classification authority="lcc">S494.5.I5 A14 2003</classification>
+          <classification authority="ddc" edition="22">338.1/6/091724</classification>
+          <identifier type="lccn">2003431503</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">GPO</recordContentSource>
+            <recordCreationDate encoding="marc">030708</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130529104123.0</recordChangeDate>
+            <recordIdentifier>13265390</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>16</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <nonSort xml:space="preserve">The </nonSort>
+            <title>ABC of forestry</title>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>Civilian Conservation Corps (U.S.)</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>U.S. Government Films Collection (Library of Congress)</namePart>
+          </name>
+          <typeOfResource>moving image</typeOfResource>
+          <genre authority="marcgt">motion picture</genre>
+          <genre authority="migfg">Documentary.</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">xxu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">United States</placeTerm>
+            </place>
+            <publisher>[U.S. Department of Agriculture]</publisher>
+            <dateIssued>1933</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marccategory">motion picture</form>
+            <form authority="marcsmd">film reel</form>
+            <form authority="marccategory">videorecording</form>
+            <form authority="marcsmd">videocassette</form>
+            <extent>1 videocassette of 1 (Digital Betacam) (ca. 9 min.) : sd., b&amp;w ; 1/2 in.
+              viewing copy.</extent>
+            <extent>1 videocassette of 1 (Betacam SP) (ca. 9 min.) : sd., b&amp;w ; 1/2 in.
+              master.</extent>
+            <extent>1 film reel of 1 (ca. 9 min., 324 ft.) : sd., b&amp;w ; 16 mm. non-viewing
+              print.</extent>
+          </physicalDescription>
+          <abstract type="Summary">Describes the growth and structure of a tree, how to fell a tree,
+            and the values of a forest.</abstract>
+          <note type="statement of responsibility" altRepGroup="00">a Civilian Conservation Corps
+            picture in cooperation with the U.S. Department of Agriculture ; produced and
+            distributed by Division of Motion Pictures Extension Service, U.S. Department of
+            Agriculture ; direction, Don Bennett ; writer, H. R. Kylie.</note>
+          <note>Copyright: no reg.</note>
+          <note>Summary taken from old LC catalog card, 77-703805.</note>
+          <note>Source used: M/B/RS preliminary shelflist card; Collections: U.S. Government
+            file.</note>
+          <note type="creation/production credits">Narration, Steve McCormick ; sound, Reuben
+            Ford.</note>
+          <note type="acquisition">Received: ca. 7/15/1948 non-viewing print; transfer; U.S.
+            Government Films Collection.</note>
+          <note type="acquisition">Received: 9/27/2000 from LC video lab; viewing copy and master;
+            preservation, LWO-36854; U.S. Government Films Collection.</note>
+          <subject authority="lcsh">
+            <topic>Forests and forestry</topic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Timber</topic>
+          </subject>
+          <classification authority="lcc">VAI 1092 (viewing copy)</classification>
+          <classification authority="lcc">VXB 8806 (master)</classification>
+          <classification authority="lcc">FAA 0002 (non-viewing print)</classification>
+          <identifier type="lccn">2001642586</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <descriptionStandard>amim</descriptionStandard>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">010705</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20060510110641.0</recordChangeDate>
+            <recordIdentifier>12461302</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>17</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Accelerating India's foodgrain production, 1967-68 to 1970-71</title>
+            <subTitle>requirements and prospects for a growth rate of 5 percent per annum</subTitle>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+            <namePart>Economic Research Service.</namePart>
+            <namePart>Foreign Development and Trade Division.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+            <namePart>Economic Research Service.</namePart>
+            <namePart>Foreign Regional Analysis Division.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Agency for International Development.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">statistics</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, D.C</placeTerm>
+            </place>
+            <publisher>U.S. Dept. of Agriculture, Economic Research Service, Foreign Development and
+              Trade Division and Foreign Regional Analysis Division, and U.S. Agency for
+              International Development</publisher>
+            <dateIssued>1967</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>ii, 54 p. : 27 cm.</extent>
+          </physicalDescription>
+          <note type="bibliography">Includes bibliographical references (p. 44).</note>
+          <subject>
+            <geographicCode authority="marcgac">a-ii---</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Grain trade</topic>
+            <geographic>India</geographic>
+          </subject>
+          <classification authority="lcc">HD9046.I4 A67 1967</classification>
+          <classification authority="ddc" edition="20">338.1/731/0954</classification>
+          <identifier type="lccn">93915044</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">930305</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130411105101.0</recordChangeDate>
+            <recordIdentifier>1593861</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>18</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Acreage</title>
+          </titleInfo>
+          <titleInfo type="abbreviated">
+            <title>Acreage</title>
+            <subTitle>(1981)</subTitle>
+          </titleInfo>
+          <titleInfo type="uniform">
+            <title>Acreage (Washington, D.C.)</title>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Crop Reporting Board.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">statistics</genre>
+          <genre authority="rdacontent">text</genre>
+          <genre authority="fast">Periodicals.</genre>
+          <genre authority="fast">Statistics.</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, D.C</placeTerm>
+            </place>
+            <publisher>The Board</publisher>
+            <dateIssued>-[1981]</dateIssued>
+            <dateIssued encoding="marc" point="start">19uu</dateIssued>
+            <dateIssued encoding="marc" point="end">1981</dateIssued>
+            <issuance>serial</issuance>
+            <frequency>Annual</frequency>
+            <frequency authority="marcfrequency">Annual</frequency>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>volumes ; 26-28 cm</extent>
+            <form type="media" authority="rdamedia">unmediated</form>
+            <form type="carrier" authority="rdacarrier">volume</form>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">Crop Reporting Board,
+            Statistical Reporting Service, U.S. Department of Agriculture.</note>
+          <note type="date/sequential designation">-June 29, 1981.</note>
+          <note>"CrPr 2-2."</note>
+          <note>Single copies are available from: Crop Reporting Board Publications, Rm. 5829, S.
+            Bldg., USDA, Washington, D.C. 20050.</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us---</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <geographic>United States</geographic>
+            <genre>Statistics</genre>
+            <genre>Periodicals</genre>
+          </subject>
+          <subject authority="fast">
+            <topic>Agriculture</topic>
+          </subject>
+          <subject authority="fast">
+            <geographic>United States</geographic>
+          </subject>
+          <classification authority="lcc">S21 .D85a</classification>
+          <classification authority="ddc">633/.00973</classification>
+          <relatedItem type="otherFormat" otherType="Online version:" displayLabel="Online version:">
+            <titleInfo>
+              <title>Acreage (Washington, D.C.)</title>
+            </titleInfo>
+            <identifier type="local">(OCoLC)623778723</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Crop production. Acreage</title>
+            </titleInfo>
+            <identifier type="local">(DLC)sn 91025616</identifier>
+            <identifier type="local">(OCoLC)9693005</identifier>
+          </relatedItem>
+          <identifier type="issn">0361-3526</identifier>
+          <identifier type="issn-l">0361-3526</identifier>
+          <identifier type="lccn">75647144</identifier>
+          <identifier type="oclc">ocm02246037</identifier>
+          <identifier type="stock number">Supt. of Docs., U.S. Govt. Print. Off., Washington, D.C.
+            20402</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">760330</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20181124014207.0</recordChangeDate>
+            <recordIdentifier>11192501</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>19</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Active foreign agricultural research grants</title>
+          </titleInfo>
+          <titleInfo type="alternative">
+            <title>Annual report of foreign agricultural research grants</title>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Science and Education Administration.</namePart>
+            <namePart>International Programs Staff.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+            <namePart>Office of International Cooperation and Development.</namePart>
+            <namePart>International Research Division.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+            <namePart>Office of International Cooperation and Development.</namePart>
+            <namePart>Research and Scientific Exchanges Division.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="rdacontent">text</genre>
+          <genre authority="fast">Periodicals.</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Hyattsville, Md.]</placeTerm>
+            </place>
+            <publisher>The Staff</publisher>
+            <dateIssued encoding="marc" point="start">19uu</dateIssued>
+            <dateIssued encoding="marc" point="end">9999</dateIssued>
+            <issuance>serial</issuance>
+            <frequency>Annual</frequency>
+            <frequency authority="marcfrequency">Annual</frequency>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>volumes ; 28 cm</extent>
+            <form type="media" authority="rdamedia">unmediated</form>
+            <form type="carrier" authority="rdacarrier">volume</form>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">prepared by International
+            Program [i.e. Programs] Staff, United States Department of Agriculture, Science and
+            Education Administration.</note>
+          <note>"Special foreign currency research program (PL 480), U.S.-Poland Joint Board,
+            U.S.-Yugoslavia Joint Board."</note>
+          <note type="additional physical form">Also issued to depository libraries on
+            microfiche.</note>
+          <note>Vols. for 1980-1989 prepared by: Office of International Cooperation and
+            Development, International Research Division; 1990 by: Office of International
+            Cooperation and Development, Research and Scientific Exchanges Division.</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us---</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <topic>Research grants</topic>
+            <genre>Periodicals</genre>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural assistance, American</topic>
+            <genre>Periodicals</genre>
+          </subject>
+          <subject authority="fast">
+            <topic>Agricultural assistance, American</topic>
+          </subject>
+          <subject authority="fast">
+            <topic>Agriculture</topic>
+            <topic>Research grants</topic>
+          </subject>
+          <classification authority="lcc">S539.5 .A28</classification>
+          <classification authority="ddc" edition="20">630/.7201723</classification>
+          <relatedItem type="otherFormat">
+            <originInfo>
+              <publisher>Supt. of Docs., U.S.G.P.O.</publisher>
+            </originInfo>
+            <identifier type="local">(DLC)sn 93028248</identifier>
+            <identifier type="local">(OCoLC)28446378</identifier>
+          </relatedItem>
+          <relatedItem type="otherFormat" otherType="Online version:" displayLabel="Online version:">
+            <titleInfo>
+              <title>Active foreign agricultural research grants</title>
+            </titleInfo>
+            <identifier type="local">(OCoLC)1021245223</identifier>
+          </relatedItem>
+          <identifier type="lccn">91644021</identifier>
+          <identifier type="lccn" invalid="yes">sn 87024251</identifier>
+          <identifier type="oclc">ocm13516716</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">UIU</recordContentSource>
+            <recordCreationDate encoding="marc">860501</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20180206080407.0</recordChangeDate>
+            <recordIdentifier>11387063</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>20</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Adhesives in building construction</title>
+          </titleInfo>
+          <name type="personal">
+            <namePart>Gillespie, Robert H.</namePart>
+          </name>
+          <name type="personal">
+            <namePart>Countryman, David.</namePart>
+          </name>
+          <name type="personal">
+            <namePart>Blomquist, Richard Frederick</namePart>
+            <namePart type="date">1912-</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">bibliography</genre>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, D.C</placeTerm>
+            </place>
+            <publisher>U.S. Dept. of Agriculture : for sale by the Supt. of Docs., U.S. Govt. Print.
+              Off.</publisher>
+            <dateIssued>1978</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>iv, 160 p. : ill. ; 26 cm.</extent>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">compiled by Robert H. Gillespie,
+            David Countryman, and Richard F. Blomquist.</note>
+          <note type="bibliography">Includes bibliographical references and index.</note>
+          <subject authority="lcsh">
+            <topic>Adhesives</topic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Building</topic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Wood</topic>
+            <topic>Bonding</topic>
+          </subject>
+          <classification authority="lcc">S21 .A37 no. 516</classification>
+          <classification authority="lcc">TA455.A34</classification>
+          <classification authority="ddc" edition="19">630 s 668/.3</classification>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>Agriculture handbook (United States. Department of Agriculture) ; no.
+                516</title>
+            </titleInfo>
+          </relatedItem>
+          <identifier type="lccn">77600020</identifier>
+          <recordInfo>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">800924</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130418070111.0</recordChangeDate>
+            <recordIdentifier>3679095</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>21</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Adoption of agricultural production practices</title>
+            <subTitle>lessons learned from the U.S. Department of Agriculture Area Studies
+              Project</subTitle>
+          </titleInfo>
+          <name type="personal">
+            <namePart>Caswell, Margriet F.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">bibliography</genre>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, D.C. (1800 M St., N.W., Washington
+                20036-5831)</placeTerm>
+            </place>
+            <publisher>U.S. Dept. of Agriculture, Economic Research Service</publisher>
+            <dateIssued>[2001]</dateIssued>
+            <dateIssued encoding="marc">2001</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>iv, 110 p. : ill. ; 28 cm.</extent>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">Margriet Caswell ... [et
+            al.].</note>
+          <note>Cover title.</note>
+          <note>"January 2001"--P. [i]</note>
+          <note type="bibliography">Includes bibliographical references.</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us---</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <topic>Technology transfer</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural innovations</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural surveys</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <classification authority="lcc">HD1751 .A91854 no. 792</classification>
+          <classification authority="lcc">S494.5.I5</classification>
+          <classification authority="ddc" edition="21">338.1 s 338.1/6/0973</classification>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>Agricultural economic report ; 792</title>
+            </titleInfo>
+          </relatedItem>
+          <identifier type="lccn">2001315865</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">010208</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20010723112021.0</recordChangeDate>
+            <recordIdentifier>12304196</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>22</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Adoption of integrated pest management in U.S. agriculture</title>
+          </titleInfo>
+          <titleInfo type="alternative">
+            <title>Adoption of IPM in U.S. agriculture</title>
+          </titleInfo>
+          <name type="personal">
+            <namePart>Vandeman, Ann M.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+            <namePart>Economic Research Service.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">bibliography</genre>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, DC</placeTerm>
+            </place>
+            <publisher>U.S. Dept. of Agriculture, Economic Research Service</publisher>
+            <dateIssued>1994</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>iii, 26 p. : ill. ; 28 cm.</extent>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">Ann Vandeman ... [et
+            al.].</note>
+          <note>Cover title.</note>
+          <note>Running title: Adoption of IPM in U.S. agriculture.</note>
+          <note type="bibliography">Includes bibliographical references (p. 25-26).</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us---</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural pests</topic>
+            <topic>Integrated control</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Pests</topic>
+            <topic>Integrated control</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <classification authority="lcc">S21 .A74 no. 707</classification>
+          <classification authority="lcc">SB950.2.A1</classification>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>Agriculture information bulletin ; no. 707</title>
+            </titleInfo>
+          </relatedItem>
+          <identifier type="lccn">95132469</identifier>
+          <identifier type="oclc">31827681</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DNAL</recordContentSource>
+            <recordCreationDate encoding="marc">950117</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130412093200.0</recordChangeDate>
+            <recordIdentifier>2093777</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>23</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Advances in agricultural technology</title>
+            <partName>AAT-NC</partName>
+          </titleInfo>
+          <titleInfo type="abbreviated">
+            <title>Adv. agric. technol</title>
+            <subTitle>(North Cent. ser.)</subTitle>
+          </titleInfo>
+          <titleInfo type="alternative">
+            <title>Advances in agricultural technology</title>
+            <partName>A.A.T.-N.C</partName>
+          </titleInfo>
+          <titleInfo type="alternative">
+            <title>Advances in agricultural technology</title>
+            <partName>AATNC</partName>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Science and Education Administration.</namePart>
+            <namePart>Agricultural Research.</namePart>
+            <namePart>North Central Region.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Agricultural Research Service.</namePart>
+            <namePart>North Central Region.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Science and Education Administration.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">series</genre>
+          <genre authority="rdacontent">text</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">ilu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Peoria, Ill.]</placeTerm>
+            </place>
+            <publisher>[Agricultural Research (North Central Region), Science and Education
+              Administration, U.S. Dept. of Agriculture]</publisher>
+            <dateIssued encoding="marc" point="start">1979</dateIssued>
+            <dateIssued encoding="marc" point="end">19uu</dateIssued>
+            <issuance>serial</issuance>
+            <frequency authority="marcfrequency">Unknown</frequency>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>volumes : illustrations ; 26 cm</extent>
+            <form type="media" authority="rdamedia">unmediated</form>
+            <form type="carrier" authority="rdacarrier">volume</form>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">Science and Education
+            Administration, U.S. Department of Agriculture.</note>
+          <note type="date/sequential designation">Began with Feb. 1979 issue.</note>
+          <note>Publisher varies: Agricultural Research (North Central Region), Science and
+            Education Administration, U.S. Dept. of Agriculture, &lt;2-&gt;; Agricultural Research
+            Service, North Central Region, U.S. Dept. of Agriculture, &lt;7-&gt;</note>
+          <note>Merged with: Advances in agricultural technology. AAT-NE; Agricultural research
+            results. ARR-NE; Agricultural reviews and manuals. ARM-NE; Agricultural reviews and
+            manuals. ARM-NC; Agricultural research results. North Central series; Advances in
+            agricultural technology. AAT-S; Agricultural reviews and manuals. ARM-S; Agricultural
+            research results. Southern series; Advances in agricultural technology. AAT-W;
+            Agricultural reviews and manuals. Western series; and: Agricultural research results.
+            ARR-W, to form: ARS (Series) (United States. Agricultural Research Service).</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us---</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural innovations</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural engineering</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Technological innovations</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural innovations</topic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural engineering</topic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Technological innovations</topic>
+          </subject>
+          <subject authority="fast">
+            <topic>Agricultural engineering</topic>
+          </subject>
+          <subject authority="fast">
+            <topic>Agricultural innovations</topic>
+          </subject>
+          <subject authority="fast">
+            <topic>Agriculture</topic>
+          </subject>
+          <subject authority="fast">
+            <topic>Technological innovations</topic>
+          </subject>
+          <subject authority="fast">
+            <geographic>United States</geographic>
+          </subject>
+          <classification authority="lcc">S21.R44 A35</classification>
+          <classification authority="ddc">631</classification>
+          <relatedItem type="otherFormat" otherType="Online version:" displayLabel="Online version:">
+            <titleInfo>
+              <title>Advances in agricultural technology. AAT-NC</title>
+            </titleInfo>
+            <identifier type="local">(OCoLC)1000298272</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Advances in agricultural technology. AAT-NE</title>
+            </titleInfo>
+            <identifier type="issn">0193-371X</identifier>
+            <identifier type="local">(DLC)sn 79007273</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Agricultural research results. ARR-NE</title>
+            </titleInfo>
+            <identifier type="issn">0193-3809</identifier>
+            <identifier type="local">(DLC)sn 79007280</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Agricultural reviews and manuals. ARM-NE</title>
+            </titleInfo>
+            <identifier type="issn">0193-3752</identifier>
+            <identifier type="local">(DLC) 81640444</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Agricultural reviews and manuals. ARM-NC</title>
+            </titleInfo>
+            <identifier type="local">(OCoLC)6112776</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Agricultural research results. North Central series</title>
+            </titleInfo>
+            <identifier type="issn">0193-3825</identifier>
+            <identifier type="local">(DLC)sn 79003711</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Advances in agricultural technology. AAT-S</title>
+            </titleInfo>
+            <identifier type="issn">0193-3728</identifier>
+            <identifier type="local">(DLC)sn 79007274</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Agricultural reviews and manuals. ARM-S</title>
+            </titleInfo>
+            <identifier type="issn">0193-3779</identifier>
+            <identifier type="local">(DLC) 80649646</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Agricultural research results. Southern series</title>
+            </titleInfo>
+            <identifier type="issn">0193-2853</identifier>
+            <identifier type="local">(DLC)sn 79003799</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Advances in agricultural technology. AAT-W</title>
+            </titleInfo>
+            <identifier type="issn">0193-3736</identifier>
+            <identifier type="local">(DLC)sc 89039997</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Agricultural reviews and manuals. Western series</title>
+            </titleInfo>
+            <identifier type="issn">0193-3760</identifier>
+            <identifier type="local">(DLC)sf 79010533</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Agricultural research results. ARR-W</title>
+            </titleInfo>
+            <identifier type="issn">0193-3817</identifier>
+            <identifier type="local">(DLC) 85649345</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>ARS (Series) (United States. Agricultural Research Service)</title>
+            </titleInfo>
+            <identifier type="issn">1052-5386</identifier>
+            <identifier type="local">(DLC)sn 86016250</identifier>
+          </relatedItem>
+          <identifier type="issn">0193-3701</identifier>
+          <identifier type="issn-l">0193-3701</identifier>
+          <identifier type="lccn">81646064</identifier>
+          <identifier type="lccn" invalid="yes">sn 79007272</identifier>
+          <identifier type="oclc">ocm04934660</identifier>
+          <identifier type="stock number">St. Anthony Falls Hydraulic Laboratory, Agricultural
+            Research, Science and Education Administration, U.S. Dept. of Agriculture, 3rd Ave. SE
+            at Mississippi River, Minneapolis, Minn. 55414</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">COO</recordContentSource>
+            <recordCreationDate encoding="marc">790507</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20181129222653.0</recordChangeDate>
+            <recordIdentifier>11251260</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>24</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <nonSort xml:space="preserve">The </nonSort>
+            <title>adventures of Junior Raindrop</title>
+          </titleInfo>
+          <name type="personal">
+            <namePart>Clancy, Carl Stearns</namePart>
+            <role>
+              <roleTerm type="text">direction.</roleTerm>
+            </role>
+          </name>
+          <name type="personal">
+            <namePart>Wendelin, Rudolph.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Forest Service.</namePart>
+          </name>
+          <typeOfResource>moving image</typeOfResource>
+          <genre authority="marcgt">motion picture</genre>
+          <genre authority="lcgft">Environmental films.</genre>
+          <genre authority="lcgft">Educational films.</genre>
+          <genre authority="lcgft">Animated films.</genre>
+          <genre authority="lcgft">Short films.</genre>
+          <genre authority="lcgft">Nonfiction films.</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">xxu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">United States</placeTerm>
+            </place>
+            <publisher>Forest Service</publisher>
+            <dateIssued>1948</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">electronic</form>
+            <form authority="marccategory">electronic resource</form>
+            <form authority="marcsmd">remote</form>
+            <extent>1 video file (digital, MPEG-4) (ca. 8 min.) : sd., col.</extent>
+          </physicalDescription>
+          <abstract type="Summary">Animated portion follows a raindrop's course through a watershed
+            while live action portion demonstrates how poor watershed management leads to negative
+            consequences for people and the environment.</abstract>
+          <note type="statement of responsibility" altRepGroup="00">a production of the United
+            States Department of Agriculture Forest Service ; direction, Carl S. Clancy ; scenario,
+            Ethel Kamm ; animation, Seymour B. Payne, Rudolph Wendelin.</note>
+          <note>Source used: Internet movie database, viewed August 3, 2018.</note>
+          <note type="creation/production credits">Photography, George H. Ortlieb.</note>
+          <subject authority="lcsh">
+            <topic>Raindrops</topic>
+            <genre>Caricatures and cartoons</genre>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Watershed management</topic>
+          </subject>
+          <location>
+            <url displayLabel="digital viewing copy" usage="primary display"
+              >https://hdl.loc.gov/loc.mbrsmi/ntscrm.01831735</url>
+          </location>
+          <relatedItem type="host">
+            <titleInfo>
+              <title>American Archives of the Factual Film Collection (Library of Congress)</title>
+            </titleInfo>
+          </relatedItem>
+          <relatedItem type="original">
+            <titleInfo>
+              <title>Adventures of Junior Raindrop</title>
+            </titleInfo>
+            <note>MAVIS</note>
+            <identifier type="local">(DLC) 1831735</identifier>
+          </relatedItem>
+          <identifier type="lccn">2018601440</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <descriptionStandard>amim</descriptionStandard>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">180803</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20200911155833.0</recordChangeDate>
+            <recordIdentifier>20612635</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>25</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>AE</title>
+          </titleInfo>
+          <titleInfo type="abbreviated">
+            <title>AE</title>
+            <subTitle>(S.C. Crop Livest. Report. Serv.)</subTitle>
+          </titleInfo>
+          <titleInfo type="alternative">
+            <title>Agricultural economics</title>
+          </titleInfo>
+          <titleInfo type="alternative" displayLabel="Some issues have title:">
+            <title>A.E</title>
+          </titleInfo>
+          <titleInfo type="uniform">
+            <title>AE (Clemson, S.C.)</title>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>South Carolina Agricultural Experiment Station</namePart>
+            <namePart>Department of Agricultural Economics.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>South Carolina Agricultural Experiment Station</namePart>
+            <namePart>Department of Agricultural Economics and Rural Sociology.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Bureau of Agricultural Economics.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>South Carolina Crop Reporting Service</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>South Carolina Crop and Livestock Reporting Service</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">series</genre>
+          <genre authority="marcgt">statistics</genre>
+          <genre authority="rdacontent">text</genre>
+          <genre authority="fast">Statistics.</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">scu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Clemson, S.C.]</placeTerm>
+            </place>
+            <publisher>Clemson Agricultural College, South Carolina Agricultural Experiment Station
+              in cooperation with U.S. Dept. of Agriculture, Bureau of Agricultural
+              Economics</publisher>
+            <dateIssued>[1951?-</dateIssued>
+            <dateIssued encoding="marc" point="start">1951</dateIssued>
+            <dateIssued encoding="marc" point="end">9999</dateIssued>
+            <issuance>serial</issuance>
+            <frequency authority="marcfrequency">Completely irregular</frequency>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>volumes : illustrations ; 27 cm</extent>
+            <form type="media" authority="rdamedia">unmediated</form>
+            <form type="carrier" authority="rdacarrier">volume</form>
+          </physicalDescription>
+          <note type="date/sequential designation">101-</note>
+          <note>No. 102 lacking series title and numerical designation.</note>
+          <note>Vols. for June 1954-Sept. 1971: issued by Dept. of Agricultural Economics, South
+            Carolina Agricultural Experiment Station; Apr. 1972- by: Dept. of Agricultural Economics
+            and Rural Sociology, South Carolina Agricultural Experiment Station.</note>
+          <note>Some vols. carry also the series numbering and title of the Crop and livestock
+            series, the County series and its successor title, County statistical series, all issued
+            by the South Carolina Crop Reporting Service, Mar. 1958-June 1967, and the South
+            Carolina Crop and Livestock Reporting Service, June 1967-</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us-sc</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <topic>Economic aspects</topic>
+            <geographic>South Carolina</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <geographic>South Carolina</geographic>
+            <genre>Statistics</genre>
+          </subject>
+          <subject authority="fast">
+            <topic>Agriculture</topic>
+          </subject>
+          <subject authority="fast">
+            <topic>Agriculture</topic>
+            <topic>Economic aspects</topic>
+          </subject>
+          <subject authority="fast">
+            <geographic>South Carolina</geographic>
+          </subject>
+          <classification authority="lcc">HD1775.S6 S6</classification>
+          <classification authority="lcc">S111 .E32</classification>
+          <classification authority="ddc" edition="12">636</classification>
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>County series (Clemson, S.C.)</title>
+            </titleInfo>
+          </relatedItem>
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>County statistical series</title>
+            </titleInfo>
+          </relatedItem>
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>Crop and livestock series</title>
+            </titleInfo>
+          </relatedItem>
+          <relatedItem type="otherFormat" otherType="Online version:" displayLabel="Online version:">
+            <titleInfo>
+              <title>AE (Clemson, S.C.)</title>
+            </titleInfo>
+            <identifier type="local">(OCoLC)685200452</identifier>
+          </relatedItem>
+          <identifier type="issn">0561-0095</identifier>
+          <identifier type="issn-l">0561-0095</identifier>
+          <identifier type="lccn">sn 87024285</identifier>
+          <identifier type="oclc">ocm02892026</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">MUL</recordContentSource>
+            <recordCreationDate encoding="marc">861219</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20180809075943.0</recordChangeDate>
+            <recordIdentifier>10604926</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>26</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>[Aerial view of Washington, D.C. looking toward southwest with Dept. of
+              Agriculture building]</title>
+          </titleInfo>
+          <typeOfResource>still image</typeOfResource>
+          <genre authority="marcgt">graphic</genre>
+          <genre authority="marcgt">government publication</genre>
+          <genre authority="gmgpc">Aerial views-1920-1930.</genre>
+          <genre authority="gmgpc">Photographic prints-1920-1930.</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">xx</placeTerm>
+            </place>
+            <dateIssued>[between 1920 and 1930]</dateIssued>
+            <dateIssued encoding="marc" point="start" qualifier="questionable">1920</dateIssued>
+            <dateIssued encoding="marc" point="end" qualifier="questionable">1930</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="gmd">graphic</form>
+            <form authority="marccategory">electronic resource</form>
+            <form authority="marcsmd">remote</form>
+            <form authority="marccategory">nonprojected graphic</form>
+            <form authority="marcsmd">photoprint</form>
+            <extent>1 photographic print.</extent>
+          </physicalDescription>
+          <abstract type="Subject">Photograph shows the central building of the Department of
+            Agriculture which has not yet been constructed.</abstract>
+          <accessCondition type="use and reproduction">Rights status not evaluated. For general
+            information see "Copyright and Other Restrictions..."
+            (http://lcweb.loc.gov/rr/print/195_copr.html)</accessCondition>
+          <note>Title devised by Library staff.</note>
+          <note>Date based on construction of main center block which began 1928-1930 and was
+            completed in 1936.</note>
+          <note>Photo by Photo Section, Bolling Field.</note>
+          <note>No. A-453,5/23.</note>
+          <note>No. 11951 A.S.</note>
+          <subject>
+            <name type="corporate">
+              <namePart>United States.</namePart>
+              <namePart>Dept. of Agriculture</namePart>
+            </name>
+            <topic>Buildings</topic>
+            <temporal>1920-1930</temporal>
+          </subject>
+          <subject authority="lctgm">
+            <topic>Government facilities</topic>
+            <geographic>Washington (D.C.)</geographic>
+            <temporal>1920-1930</temporal>
+          </subject>
+          <subject>
+            <geographic>Washington (D.C.)</geographic>
+            <temporal>1920-1930</temporal>
+          </subject>
+          <classification authority="lcc">U.S. GEOG FILE - Washington, D.C.--Views--Aerial &amp;
+            Bird's-eye [item]</classification>
+          <location>
+            <physicalLocation>Library of Congress Prints and Photographs Division Washington, D.C.
+              20540 USA</physicalLocation>
+          </location>
+          <location>
+            <url displayLabel="b&amp;w film copy neg." usage="primary display"
+              >http://hdl.loc.gov/loc.pnp/cph.3c33377</url>
+          </location>
+          <identifier type="lccn">2003675491</identifier>
+          <identifier type="stock number" displayLabel="(b&amp;w film copy neg.)">LC-USZ62-133377
+            DLC</identifier>
+          <identifier type="hdl">hdl:loc.pnp/cph.3c33377</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <descriptionStandard>gihc</descriptionStandard>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">030930</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20170929152011.0</recordChangeDate>
+            <recordIdentifier>13358360</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>27</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <nonSort xml:space="preserve">The </nonSort>
+            <title>... Africa and West Asia agricultural situation</title>
+          </titleInfo>
+          <titleInfo type="uniform">
+            <title>Africa and west Asia agricultural situation (Washington, D.C. : 1963)</title>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+            <namePart>Economic Research Service.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+            <namePart>Economic Research Service.</namePart>
+            <namePart>Africa and Middle East Branch.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="rdacontent">text</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, D.C</placeTerm>
+            </place>
+            <publisher>U.S. Dept. of Agriculture, Economic Research Service</publisher>
+            <dateIssued>1963-[1968]</dateIssued>
+            <dateIssued encoding="marc" point="start">1963</dateIssued>
+            <dateIssued encoding="marc" point="end">1968</dateIssued>
+            <issuance>serial</issuance>
+            <frequency>Annual</frequency>
+            <frequency authority="marcfrequency">Annual</frequency>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>5 volumes : illustrations ; 26 cm.</extent>
+            <form type="media" authority="rdamedia">unmediated</form>
+            <form type="carrier" authority="rdacarrier">volume</form>
+          </physicalDescription>
+          <note type="date/sequential designation">1963-review of 1967 and outlook for 1968.</note>
+          <note>Title from cover.</note>
+          <note type="numbering">Issues for 1966- include review of past year and outlook for
+            current year.</note>
+          <note>Supplements with subtitle "Midyear review" accompany some issues.</note>
+          <note>Issued by: Africa and Middle East Branch.</note>
+          <subject>
+            <geographicCode authority="marcgac">f------</geographicCode>
+            <geographicCode authority="marcgac">a------</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <topic>Economic aspects</topic>
+            <geographic>Africa</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <topic>Economic aspects</topic>
+            <geographic>Middle East</geographic>
+          </subject>
+          <classification authority="lcc">HD2117 .U5</classification>
+          <relatedItem type="host">
+            <titleInfo>
+              <title>World agricultural situation (Washington, D.C. : 1954)</title>
+            </titleInfo>
+            <identifier type="issn">0084-1358</identifier>
+            <identifier type="local">(DLC) 55061136</identifier>
+            <identifier type="local">(OCoLC)1190771</identifier>
+          </relatedItem>
+          <relatedItem type="otherFormat" otherType="Online version:" displayLabel="Online version:">
+            <titleInfo>
+              <title>Africa and west Asia agricultural situation (Washington, D.C. : 1963)</title>
+            </titleInfo>
+            <identifier type="local">(OCoLC)648034359</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Agricultural situation in Africa and West Asia</title>
+            </titleInfo>
+            <name>
+              <namePart>United States. Department of Agriculture. Economic Research
+                Service.</namePart>
+            </name>
+            <identifier type="issn">0094-5528</identifier>
+            <identifier type="local">(DLC) 74645299</identifier>
+            <identifier type="local">(OCoLC)1794421</identifier>
+          </relatedItem>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>ERS-foreign</title>
+            </titleInfo>
+          </relatedItem>
+          <identifier type="issn">0565-2588</identifier>
+          <identifier type="issn-l">0565-2588</identifier>
+          <identifier type="lccn">64061389</identifier>
+          <identifier type="lccn" invalid="yes">sn 82003906</identifier>
+          <identifier type="oclc">ocm03369817</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">NSDP</recordContentSource>
+            <recordCreationDate encoding="marc">771026</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130427160851.0</recordChangeDate>
+            <recordIdentifier>11157248</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>28</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>After action report</title>
+            <subTitle>Olympic and Paralympic Winter Games of 2002</subTitle>
+          </titleInfo>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, D.C.]</placeTerm>
+            </place>
+            <publisher>The Service</publisher>
+            <dateIssued>[2002]</dateIssued>
+            <dateIssued encoding="marc">2002</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>64 p.</extent>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">United States Department of
+            Agriculture, Forest Service, Intermountain Region.</note>
+          <note>"2002 planning team."</note>
+          <classification authority="lcc">MLCM 2006/10043</classification>
+          <identifier type="lccn">2002435767</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">020823</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20060427135157.0</recordChangeDate>
+            <recordIdentifier>12904282</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>29</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Age relations between soils and geology in the coastal plain of Maryland and
+              Virginia</title>
+          </titleInfo>
+          <name type="personal">
+            <namePart>Markewich, Helaine W.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Soil Conservation Service.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">bibliography</genre>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Denver, CO</placeTerm>
+            </place>
+            <publisher>U.S. G.P.O.</publisher>
+            <publisher>For sale by the Books and Open-File Reports Section, U.S. Geological
+              Survey</publisher>
+            <dateIssued>1987</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>vii, 34 p. : ill. ; 28 cm.</extent>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">by H.W. Markewich ... [et
+            al.].</note>
+          <note>"Prepared in cooperation with the U.S. Department of Agriculture, Soil Conservation
+            Service."</note>
+          <note type="bibliography">Bibliography: p. 17-18.</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us-md</geographicCode>
+            <geographicCode authority="marcgac">n-us-va</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Soils</topic>
+            <topic>Age</topic>
+            <geographic>Eastern Shore (Md. and Va.)</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Soils</topic>
+            <topic>Age</topic>
+            <geographic>Virginia</geographic>
+            <geographic>Rappahannock River Region</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Soil formation</topic>
+            <geographic>Eastern Shore (Md. and Va.)</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Soil formation</topic>
+            <geographic>Rappahannock River</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Geology</topic>
+            <geographic>Eastern Shore (Md. and Va.)</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Geology</topic>
+            <geographic>Virginia</geographic>
+            <geographic>Rappahannock River Region</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Geology, Stratigraphic</topic>
+            <temporal>Holocene</temporal>
+          </subject>
+          <classification authority="lcc">QE75 .B9 no. 1589-A</classification>
+          <classification authority="lcc">S599.M3</classification>
+          <classification authority="ddc" edition="19">557.3 s 552/.5</classification>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>Pedologic studies in the eastern United States, relations to geology ; ch.
+                A</title>
+            </titleInfo>
+          </relatedItem>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>U.S. Geological Survey bulletin ; 1589-A</title>
+            </titleInfo>
+          </relatedItem>
+          <identifier type="lccn">85600233</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">851016</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20030703084639.0</recordChangeDate>
+            <recordIdentifier>4290958</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>30</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Agri-environmental policy at the crossroads</title>
+            <subTitle>guideposts on a changing landscape</subTitle>
+          </titleInfo>
+          <name type="personal">
+            <namePart>Claassen, Roger L.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+            <namePart>Economic Research Service.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">bibliography</genre>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, D.C</placeTerm>
+            </place>
+            <publisher>U.S. Dept. of Agriculture, Economic Research Service</publisher>
+            <dateIssued>[2001]</dateIssued>
+            <dateIssued encoding="marc">2001</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>v, 66 p. : col. ill., col. maps ; 28 cm.</extent>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">[Roger Claassen ... et
+            al.].</note>
+          <note>Cover title.</note>
+          <note>"January 2001"--P. [i].</note>
+          <note type="bibliography">Includes bibliographical references (p. 49-56).</note>
+          <note type="additional physical form">Also available on the Internet.</note>
+          <subject authority="lcsh">
+            <topic>Agriculture and state</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Environmental policy</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <topic>Environmental aspects</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <classification authority="lcc">HD1751 .A91854 no. 794</classification>
+          <classification authority="ddc" edition="21">338.1/0973</classification>
+          <location>
+            <url displayLabel="electronic resource" usage="primary display"
+              >http://www.ers.usda.gov/publications/aer794/</url>
+          </location>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>Agricultural economic report ; no. 794</title>
+            </titleInfo>
+          </relatedItem>
+          <identifier type="lccn">2001387439</identifier>
+          <identifier type="oclc">ocm46778884</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">AGL</recordContentSource>
+            <recordCreationDate encoding="marc">010731</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130528085544.0</recordChangeDate>
+            <recordIdentifier>12488477</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>31</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Agricultural adaptation to climate change</title>
+            <subTitle>issues of longrun sustainability</subTitle>
+          </titleInfo>
+          <name type="personal">
+            <namePart>Schimmelpfennig, David.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+            <namePart>Economic Research Service.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">bibliography</genre>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, D.C. (1301 New York Ave., N.W., Washington
+                20005-4788)</placeTerm>
+            </place>
+            <publisher>U.S. Dept. of Agriculture, Economic Research Service</publisher>
+            <dateIssued>[1996]</dateIssued>
+            <dateIssued encoding="marc">1996</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>vi, 57 p. ; 28 cm.</extent>
+          </physicalDescription>
+          <note type="statement of responsibility" altRepGroup="00">David Schimmelpfennig ... [et
+            al.].</note>
+          <note>Cover title.</note>
+          <note type="bibliography">Includes bibliographical references (p. 50-53) and index.</note>
+          <subject authority="lcsh">
+            <topic>Climatic changes</topic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Crops and climate</topic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <topic>Economic aspects</topic>
+          </subject>
+          <classification authority="lcc">HD1751 .A91854 no. 740</classification>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>Agricultural economic report ; no. 740</title>
+            </titleInfo>
+          </relatedItem>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>An Economic Research Service report</title>
+            </titleInfo>
+          </relatedItem>
+          <identifier type="lccn">96187981</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">960830</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130415071841.0</recordChangeDate>
+            <recordIdentifier>2590264</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>32</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Agricultural and credit outlook</title>
+          </titleInfo>
+          <titleInfo type="abbreviated">
+            <title>Agric. credit outlook</title>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Farm Credit Administration.</namePart>
+            <namePart>Economic Analysis Division.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Farm Credit Administration.</namePart>
+            <namePart>Research Division.</namePart>
+          </name>
+          <name type="conference">
+            <namePart>Food and Agricultural Outlook Conference.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="rdacontent">text</genre>
+          <genre authority="fast">Periodicals.</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, D.C.]</placeTerm>
+            </place>
+            <publisher>[Farm Credit Administration, Economic Analysis Division]</publisher>
+            <dateIssued encoding="marc" point="start">19uu</dateIssued>
+            <dateIssued encoding="marc" point="end">198u</dateIssued>
+            <issuance>serial</issuance>
+            <frequency>Annual</frequency>
+            <frequency authority="marcfrequency">Annual</frequency>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>volumes ; 27 cm</extent>
+            <form type="media" authority="rdamedia">unmediated</form>
+            <form type="carrier" authority="rdacarrier">volume</form>
+          </physicalDescription>
+          <note>"A team of Farm Credit System personnel undertook a project of interpreting and
+            summarizing the annual Food and Agricultural Outlook Conference of the Department of
+            Agriculture."</note>
+          <note type="additional physical form">Volumes for 1981- distributed to depository
+            libraries on microfiche.</note>
+          <note>Volumes for -1978 issued by the Farm Credit Administration, Research
+            Division.</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us---</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agricultural credit</topic>
+            <geographic>United States</geographic>
+            <genre>Periodicals</genre>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <geographic>United States</geographic>
+            <topic>Finance</topic>
+            <genre>Periodicals</genre>
+          </subject>
+          <subject authority="fast">
+            <topic>Agricultural credit</topic>
+          </subject>
+          <subject authority="fast">
+            <topic>Agriculture</topic>
+            <topic>Finance</topic>
+          </subject>
+          <subject authority="fast">
+            <geographic>United States</geographic>
+          </subject>
+          <classification authority="lcc">HD1440.U6 A68</classification>
+          <classification authority="ddc">338.1/3/0973</classification>
+          <relatedItem type="otherFormat" otherType="Online version:" displayLabel="Online version:">
+            <titleInfo>
+              <title>Agricultural and credit outlook</title>
+            </titleInfo>
+            <identifier type="local">(OCoLC)623580510</identifier>
+          </relatedItem>
+          <relatedItem type="preceding">
+            <titleInfo>
+              <title>Farm and credit outlook</title>
+            </titleInfo>
+            <identifier type="issn">0094-3886</identifier>
+            <identifier type="local">(OCoLC)5722590</identifier>
+          </relatedItem>
+          <relatedItem type="succeeding">
+            <titleInfo>
+              <title>Economic perspectives. Agricultural credit outlook</title>
+            </titleInfo>
+            <identifier type="issn">1048-7573</identifier>
+            <identifier type="local">(DLC)sn 88018564</identifier>
+            <identifier type="local">(OCoLC)18097625</identifier>
+          </relatedItem>
+          <identifier type="issn">0732-6009</identifier>
+          <identifier type="issn-l">0732-6009</identifier>
+          <identifier type="lccn">82642878</identifier>
+          <identifier type="oclc">ocm05230565</identifier>
+          <identifier type="stock number">Farm Credit Administration, Economic Analysis Division,
+            Washington, D.C. 20578</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">OSU</recordContentSource>
+            <recordCreationDate encoding="marc">790801</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20181130082246.0</recordChangeDate>
+            <recordIdentifier>11260306</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>33</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Agricultural and food research issues and priorities</title>
+            <subTitle>a review and assessment : a report on the findings and recommendations
+              contained in conference proceedings, congressional hearings, special studies,
+              articles, and other published reports and materials dealing with agricultural and food
+              research policy and performance</subTitle>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+          </name>
+          <name type="corporate">
+            <namePart>Agricultural Research Policy Advisory Committee</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">bibliography</genre>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington]</placeTerm>
+            </place>
+            <publisher>U.S. Dept. of Agriculture</publisher>
+            <dateIssued>[1979]</dateIssued>
+            <dateIssued encoding="marc">1979</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>xx, 85 [18] p. : ill. ; 26 cm.</extent>
+          </physicalDescription>
+          <note>"This review and assessment ... was done at the request of the Agricultural Research
+            Policy Advisory Committee."</note>
+          <note type="bibliography">Includes bibliographical references.</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us---</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <topic>Research</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Food</topic>
+            <topic>Research</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture and state</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <classification authority="lcc">S541 .A48</classification>
+          <classification authority="ddc">630/.7/2073</classification>
+          <identifier type="lccn">79602064</identifier>
+          <recordInfo>
+            <recordContentSource authority="marcorg">DLC</recordContentSource>
+            <recordCreationDate encoding="marc">791023</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130411080039.0</recordChangeDate>
+            <recordIdentifier>1350987</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>34</zs:recordPosition>
+    </zs:record>
+    <zs:record>
+      <zs:recordSchema>mods</zs:recordSchema>
+      <zs:recordPacking>xml</zs:recordPacking>
+      <zs:recordData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.loc.gov/mods/v3" version="3.6"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+          <titleInfo>
+            <title>Agricultural and rural economic and social indicators</title>
+          </titleInfo>
+          <name type="corporate">
+            <namePart>United States</namePart>
+            <namePart>Department of Agriculture.</namePart>
+            <namePart>Economic Research Service.</namePart>
+          </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="marcgt">statistics</genre>
+          <genre authority="marcgt">government publication</genre>
+          <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">dcu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Washington, DC]</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">Herndon, VA</placeTerm>
+            </place>
+            <publisher>U.S. Dept. of Agriculture, Economic Research Service</publisher>
+            <publisher>ERS-NASS [distributor</publisher>
+            <dateIssued>1993]</dateIssued>
+            <dateIssued encoding="marc">1993</dateIssued>
+            <issuance>monographic</issuance>
+          </originInfo>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+          </language>
+          <physicalDescription>
+            <form authority="marcform">print</form>
+            <extent>ii, 61 p. ; 28 cm.</extent>
+          </physicalDescription>
+          <note>Shipping list no.: 93-0292-P.</note>
+          <note>"March 1993"--P. i.</note>
+          <subject>
+            <geographicCode authority="marcgac">n-us---</geographicCode>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Agriculture</topic>
+            <topic>Economic aspects</topic>
+            <geographic>United States</geographic>
+            <topic>Statistics</topic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Economic indicators</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <topic>Social indicators</topic>
+            <geographic>United States</geographic>
+          </subject>
+          <subject authority="lcsh">
+            <geographic>United States</geographic>
+            <topic>Rural conditions</topic>
+            <topic>Statistics</topic>
+          </subject>
+          <classification authority="lcc">S21 .A74 no. 667</classification>
+          <classification authority="lcc">HD1769</classification>
+          <relatedItem type="series">
+            <titleInfo>
+              <title>Agriculture information bulletin ; no. 667</title>
+            </titleInfo>
+          </relatedItem>
+          <identifier type="lccn">93203519</identifier>
+          <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">DGPO/DLC</recordContentSource>
+            <recordCreationDate encoding="marc">930910</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20130412090856.0</recordChangeDate>
+            <recordIdentifier>2061233</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+              (Revision 1.119 2018/06/21)</recordOrigin>
+          </recordInfo>
+        </mods>
+      </zs:recordData>
+      <zs:recordPosition>35</zs:recordPosition>
+    </zs:record>
+  </zs:records>
+  <zs:nextRecordPosition>36</zs:nextRecordPosition>
+  <zs:echoedSearchRetrieveRequest>
+    <zs:version>1.1</zs:version>
+    <zs:query>United States Department of Agriculture</zs:query>
+    <zs:startRecord>11</zs:startRecord>
+    <zs:maximumRecords>25</zs:maximumRecords>
+    <zs:recordPacking>xml</zs:recordPacking>
+    <zs:recordSchema>mods</zs:recordSchema>
+  </zs:echoedSearchRetrieveRequest>
+</zs:searchRetrieveResponse>
