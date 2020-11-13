@@ -3,20 +3,21 @@
     xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:f="http://functions/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
     xmlns:zs="http://www.loc.gov/zing/srw/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:saxon="http://saxon.sf.net/"
+    xmlns:saxon="http://saxon.sf.net/" xmlns:xlink="http://www.w3.org/1999/xlink"
     xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
     exclude-result-prefixes="xs xd saxon zs xsi f #default" version="2.0">
 
     <xsl:strip-space elements="*"/>
 
-    <xsl:output name="originalFile" method="xml" indent="yes" encoding="UTF-8" media-type="text/xml"
-        version="1.0"/>
-    <xsl:output name="archiveFile" method="xml" indent="yes" encoding="UTF-8" version="1.0"
-        media-type="text/xml"/>
-
+    <xsl:output name="originalFile" method="xml" indent="yes" encoding="UTF-8" media-type="text/xml" version="1.0"/>   
+    <xsl:output name="archiveFile" method="xml" indent="yes" encoding="UTF-8" media-type="text/xml" version="1.0"/> 
+        
+    
+<!--<xsl:include href="commons/common.xsl"/>-->
     <xsl:include href="commons/params.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
-    <xsl:include href="commons/countryList.xsl"/>
+    <xsl:include href="commons/iso-639_1_to_iso-639_2b.xsl"/>
+
 
 
     <xd:doc scope="stylesheet">
@@ -42,13 +43,13 @@
     </xsl:template>-->
     <xd:doc>
         <xd:desc/>
-    </xd:doc>
-    <!--   <xsl:template match="@* | node()">
+    </xd:doc><!--
+       <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="node() | @*"/>
         </xsl:copy>
-    </xsl:template>-->
-
+    </xsl:template>
+-->
 
 
     <xd:doc>
@@ -57,9 +58,8 @@
     <xsl:template match="/">
         <zs:searchRetrieveResponse>
             <modsCollection>
-                <xsl:for-each select="*//mods" xpath-default-namespace="http://www.loc.gov/mods/v3">
-                    <!--//*[namespace-uri() = 'http://www.loc.gov/mods/v3' and local-name() = 'mods']">-->
-                    <zs:records xmlns:zs="http://www.loc.gov/zing/srw/">
+                <xsl:for-each select="*//mods" xpath-default-namespace="http://www.loc.gov/mods/v3">                   
+                    <zs:records>
                         <xsl:result-document encoding="UTF-8" indent="yes" method="xml"
                             media-type="text/xml" format="archiveFile"
                             href="{$workingDir}A-{$originalFilename}_{position()}.xml">
@@ -71,12 +71,9 @@
                         media-type="text/xml" format="originalFile"
                         href="{$workingDir}N-{$originalFilename}_{position()}.xml">
                         <mods>
-                            <xsl:namespace name="zs" select="'http://www.loc.gov/zing/srw/'"/>
                             <xsl:namespace name="xlink" select="'http://www.w3.org/1999/xlink'"/>
-                            <xsl:namespace name="xsi"
-                                select="'http://www.w3.org/2001/XMLSchema-instance'"/>
-                            <xsl:attribute name="xsi:schemaLocation"
-                                select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
+                            <xsl:namespace name="xsi" select="'http://www.w3.org/2001/XMLSchema-instance'"/>
+                            <xsl:attribute name="xsi:schemaLocation" select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
                             <xsl:attribute name="version" select="'3.7'"/>
                             <xsl:apply-templates select="mods:titleInfo"/>
                             <xsl:apply-templates select="mods:name"/>
@@ -113,9 +110,7 @@
         </xd:desc>
         <xd:param name="titles"/>
     </xd:doc>
-    <xsl:template match="mods:titleInfo" xpath-default-namespace="http://www.loc.gov/mods/v3">
-        <!--match="*[namespace-uri() = 'http://www.loc.gov/mods/v3' and local-name() = 'titleInfo']"
-        xpath-default-namespace="http://www.loc.gov/mods/v3">-->
+    <xsl:template match="mods:titleInfo" xpath-default-namespace="http://www.loc.gov/mods/v3">      
         <xsl:param name="titles" as="xs:string*"/>
         <titleInfo>
             <xsl:if test="@type">
@@ -133,8 +128,7 @@
                 <subTitle>
                     <xsl:value-of select="subTitle"/>
                 </subTitle>
-            </xsl:if>
-            <!--partNumber-->
+            </xsl:if>           
             <xsl:choose>
                 <xsl:when test="partNumber">
                     <partNumber>
@@ -323,50 +317,40 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <xsl:template match="mods:physicalDescription"
-        xpath-default-namespace="http://www.loc.gov/mods/v3">
+    <xsl:template match="mods:physicalDescription" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <physicalDescription>
-            <xsl:for-each select="form">
-                <!--form-->
-                <form>
-                    <!--@type-->
+            <xsl:for-each select="form">                
+                <form>                    
                     <xsl:if test="@type">
                         <xsl:attribute name="type" select="@type"/>
-                    </xsl:if>
-                    <!--@authority-->
+                    </xsl:if>                    
                     <xsl:if test="@authority">
                         <xsl:attribute name="authority" select="@authority"/>
                     </xsl:if>
                     <xsl:value-of select="."/>
                 </form>
-            </xsl:for-each>
-            <!--reformattingQuality-->
+            </xsl:for-each>            
             <xsl:if test="reformattingQuality">
                 <reformattingQuality>
                     <xsl:value-of select="reformattingQuality"/>
                 </reformattingQuality>
-            </xsl:if>
-            <!--internetMediaType-->
+            </xsl:if>            
             <xsl:if test="internetMediaType">
                 <internetMediaType>
                     <xsl:value-of select="internetMediaType"/>
                 </internetMediaType>
-            </xsl:if>
-            <!--extent-->
+            </xsl:if>            
             <xsl:if test="extent">
                 <extent>
                     <xsl:value-of select="extent"/>
                 </extent>
-            </xsl:if>
-            <!--digitalOrigin-->
+            </xsl:if>            
             <xsl:if test="digitalOrigin">
                 <digitalOrigin>
                     <xsl:value-of select="digitalOrigin"/>
                 </digitalOrigin>
-            </xsl:if>
-            <!--note-->
-            <xsl:if test="note">
-                <!--@type-->
+            </xsl:if>    
+            <xsl:if test="note">    
                 <xsl:if test="note/@type">
                     <xsl:attribute name="type" select="form/@type"/>
                 </xsl:if>
@@ -375,7 +359,6 @@
                 </note>
             </xsl:if>
         </physicalDescription>
-
     </xsl:template>
 
 
@@ -406,12 +389,12 @@
     <xsl:template match="mods:subject" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <subject>
             <xsl:if test="normalize-space(.) != ''">
-                <xsl:if test="geographicCode">
+                <xsl:for-each select="geographicCode">
                     <geographicCode>
-                        <xsl:attribute name="authority" select="geographicCode/@authority"/>
-                        <xsl:value-of select="geographicCode"/>
+                        <xsl:attribute name="authority" select="@authority"/>
+                        <xsl:value-of select="."/>
                     </geographicCode>
-                </xsl:if>
+                </xsl:for-each>
                 <xsl:if test="topic or geographic">
                     <xsl:attribute name="authority" select="@authority"/>
                     <xsl:sequence select="topic[position()] | geographic"/>
@@ -421,7 +404,7 @@
     </xsl:template>
 
     <xd:doc>
-        <xd:desc/> + </xd:doc>
+        <xd:desc/></xd:doc>
     <xsl:template match="mods:classification" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <classification>
             <xsl:if test="@authority">
@@ -457,9 +440,13 @@
     </xd:doc>
     <xsl:template match="mods:relatedItem" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <relatedItem>
+            <xsl:if test="@type">
             <xsl:attribute name="type" select="@type"/>
+            </xsl:if>           
+            <xsl:if test="normalize-space(.) !=' '">
             <xsl:apply-templates select="titleInfo"/>
             <xsl:apply-templates select="identifier"/>
+            </xsl:if>
         </relatedItem>
     </xsl:template>
 
@@ -478,11 +465,33 @@
     </xd:doc>
     <xsl:template match="mods:location" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <location>
-            <url>
-                <xsl:attribute name="displayLabel" select="url/@displayLabel"/>
-                <xsl:attribute name="usage" select="url/@usage"/>
+         <xsl:choose>
+             <xsl:when test="physicalLocation">
+             <physicalLocation>
+               
+                    <physicalLocation>
+                        <xsl:namespace name="xlink" select="'http://www.w3.org/1999/xlink'"/>
+                        <xsl:attribute name="xlink:href" select="@xlink:href"/>
+                        <xsl:value-of select="."/>                        
+                    </physicalLocation>
+                   
+             </physicalLocation>          
+             </xsl:when>
+
+                
+               <xsl:when test="url">
+                   <url>
+                       <xsl:if test="url/@usage">
+                        <xsl:attribute name="usage" select="url/@usage"/>
+                       </xsl:if>
+                       <xsl:if test="url/@displayLabel">
+                        <xsl:attribute name="displayLabel" select="url/@displayLabel"/>
+                       </xsl:if>
+                       <xsl:value-of select="."/>
+                   </url>              
                 <xsl:value-of select="."/>
-            </url>
+               </xsl:when>                           
+        </xsl:choose>    
         </location>
     </xsl:template>
 
@@ -513,57 +522,121 @@
                 <xsl:when test="@shareable">
                     <xsl:attribute name="shareable" select="@shareable"/>
                 </xsl:when>
-                <!--  <xsl:attribute name="{{xlink:href}}" select="@href"/>-->
+                <xsl:when test="@xlink:href">
+                <xsl:attribute name="xlink:href" select="@xlink:href"/>
+                </xsl:when>
             </xsl:choose>
-
-
             <xsl:value-of select="."/>
-
         </abstract>
-
-
     </xsl:template>
-
+    <xd:doc>
+        <xd:desc>
+            <xd:p>mods:tableOfContents</xd:p>
+        </xd:desc>
+        <xd:param>
+            <xd:p></xd:p>
+        </xd:param>
+        <xd:return>
+            <xd:p></xd:p>
+        </xd:return>
+    </xd:doc>
+    <xsl:template match="mods:tableOfContents">
+        <tableOfContents>
+            <xsl:choose>
+                <xsl:when test="@type">
+                    <xsl:attribute name="type" select="@type"/>    
+                </xsl:when>
+                <xsl:when test="@shareable">
+                    <xsl:attribute name="shareable" select="@shareable"/>                    
+                </xsl:when>
+                <xsl:when test="@displayLabel">
+                    <xsl:attribute name="displayLabel" select="@displayLabel"/>           
+                </xsl:when>
+                <xsl:when test="@altFormat">
+                    <xsl:attribute name="altFormat" select="@altFormat"/>
+                </xsl:when>
+                <xsl:when test="@contentType">
+                    <xsl:attribute name="contentType" select="@contentType"/>
+                </xsl:when>
+            </xsl:choose>
+            <xsl:value-of select="."/>
+        </tableOfContents>
+    </xsl:template>
+    
+    <xd:doc>
+        <xd:desc>
+            <xd:p>mods:targetAudience</xd:p>
+        </xd:desc>
+        <xd:param>
+            <xd:p></xd:p>
+        </xd:param>
+        <xd:return>
+            <xd:p></xd:p>
+        </xd:return>
+    </xd:doc>
+    <xsl:template match="mods:targetAudience" xpath-default-namespace="http://www.loc.gov/mods/v3">
+        <!--Common: 
+            Language-related: lang; xml:lang; script; transliteration
+            Internal Linking: altRepGroup 
+            Miscellaneous: sdisplayLabel; altFormat
+            Specific: None -->
+        <targetAudience>
+            <xsl:choose>
+                <xsl:when test="@altRepGroup">
+                    <xsl:attribute name="altRepGroup" select="@altRepGroup"/>
+                </xsl:when>
+                <xsl:when test="@displayLabel">
+                    <xsl:attribute name="displayLabel" select="@displayLabel"/>
+                </xsl:when>
+                <xsl:when test="@altFormat">
+                    <xsl:attribute name="usage" select="@altFormat"/>
+                </xsl:when>
+            </xsl:choose>
+            <xsl:value-of select="."/>
+        </targetAudience>
+    </xsl:template>
 
     <xd:doc>
         <xd:desc>
-            <xd:p/>
-        </xd:desc>
-        <xd:param>
-            <xd:p/>
-        </xd:param>
-        <xd:return>
-            <xd:p/>
-        </xd:return>
+            <xd:p><xd:b>mods:recordInfo</xd:b> - is a container element that includes subelements relating to information 
+                necessary for managing metadata. This type of administrative information can help establish 
+                the provenance of a metadata record and may enable better interpretation of the content of the 
+                record.
+            </xd:p>
+            <xd:p>
+                <![CDATA[<recordInfo>]]> may also include information that is relevant only to the creating
+                or managing institution.
+            </xd:p>
+        </xd:desc>       
     </xd:doc>
-    <xsl:template match="mods:recordInfo" xpath-default-namespace="http://www.loc.gov/mods.v3">
+    <xsl:template match="mods:recordInfo" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <recordInfo>
             <descriptionStandard>
-                <xsl:value-of select="mods:descriptionStandard"/>
+                <xsl:value-of select="descriptionStandard"/>
             </descriptionStandard>
             <recordContentSource>
-                <xsl:if test="mods:recordContentSource/@authority">
-                    <xsl:attribute name="authority" select="mods:recordContentSource/@authority"/>
+                <xsl:if test="recordContentSource/@authority">
+                    <xsl:attribute name="authority" select="recordContentSource/@authority"/>
                 </xsl:if>
-                <xsl:value-of select="mods:recordContentSource"/>
+                <xsl:value-of select="recordContentSource"/>
             </recordContentSource>
             <recordCreationDate>
-                <xsl:if test="mods:recordCreationDate/@encoding">
-                    <xsl:attribute name="encoding" select="mods:recordCreationDate/@encoding"/>
+                <xsl:if test="recordCreationDate/@encoding">
+                    <xsl:attribute name="encoding" select="recordCreationDate/@encoding"/>
                 </xsl:if>
-                <xsl:value-of select="mods:recordCreationDate"/>
+                <xsl:value-of select="recordCreationDate"/>
             </recordCreationDate>
             <recordChangeDate>
-                <xsl:if test="mods:recordCreationDate/@encoding">
-                    <xsl:attribute name="encoding" select="mods:recordCreationDate/@encoding"/>
+                <xsl:if test="recordCreationDate/@encoding">
+                    <xsl:attribute name="encoding" select="recordCreationDate/@encoding"/>
                 </xsl:if>
-                <xsl:value-of select="mods:recordChangeDate"/>
+                <xsl:value-of select="recordChangeDate"/>
             </recordChangeDate>
             <recordIdentifier>
-                <xsl:value-of select="mods:recordIdentifier"/>
+                <xsl:value-of select="recordIdentifier"/>
             </recordIdentifier>
             <recordOrigin>
-                <xsl:value-of select="mods:recordOrigin"/>
+                <xsl:value-of select="recordOrigin"/>
             </recordOrigin>
         </recordInfo>
     </xsl:template>
