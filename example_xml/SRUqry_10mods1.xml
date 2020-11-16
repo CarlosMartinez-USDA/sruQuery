@@ -22,7 +22,7 @@
             <namePart>Animal Disease and Parasite Research Division.</namePart>
           </name>
           <typeOfResource>text</typeOfResource>
-          <genre authority="Marc">government publication</genre>
+          <genre authority="marcgt">government publication</genre>
           <originInfo>
             <place>
               <placeTerm type="code" authority="marccountry">dcu</placeTerm>

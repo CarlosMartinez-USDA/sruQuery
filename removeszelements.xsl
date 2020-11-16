@@ -56,7 +56,7 @@
         <xd:desc/>
     </xd:doc>
     <xsl:template match="/">
-        <zs:searchRetrieveResponse>
+        <zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/">
             <modsCollection>
                 <xsl:for-each select="*//mods" xpath-default-namespace="http://www.loc.gov/mods/v3">                   
                     <zs:records>
@@ -71,6 +71,7 @@
                         media-type="text/xml" format="originalFile"
                         href="{$workingDir}N-{$originalFilename}_{position()}.xml">
                         <mods>
+                            <xsl:namespace name="zs" select="'http://www.loc.gov/zing/srw/'"/>
                             <xsl:namespace name="xlink" select="'http://www.w3.org/1999/xlink'"/>
                             <xsl:namespace name="xsi" select="'http://www.w3.org/2001/XMLSchema-instance'"/>
                             <xsl:attribute name="xsi:schemaLocation" select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
@@ -468,18 +469,13 @@
          <xsl:choose>
              <xsl:when test="physicalLocation">
              <physicalLocation>
-               
-                    <physicalLocation>
                         <xsl:namespace name="xlink" select="'http://www.w3.org/1999/xlink'"/>
-                        <xsl:attribute name="xlink:href" select="@xlink:href"/>
-                        <xsl:value-of select="."/>                        
-                    </physicalLocation>
-                   
+                        <xsl:attribute name="xlink:href" select="physicalLocation/@xlink:href"/>
+                        <xsl:value-of select="."/>     
              </physicalLocation>          
-             </xsl:when>
-
-                
-               <xsl:when test="url">
+             </xsl:when>              
+         </xsl:choose>
+               <xsl:for-each select="mods:url">
                    <url>
                        <xsl:if test="url/@usage">
                         <xsl:attribute name="usage" select="url/@usage"/>
@@ -490,8 +486,7 @@
                        <xsl:value-of select="."/>
                    </url>              
                 <xsl:value-of select="."/>
-               </xsl:when>                           
-        </xsl:choose>    
+               </xsl:for-each>                                
         </location>
     </xsl:template>
 
