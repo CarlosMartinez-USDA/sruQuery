@@ -12,7 +12,7 @@
       <namePart>Raschke, Gregory K.</namePart>
    </name>
    <typeOfResource>text</typeOfResource>
-   <genre authority="">journal article</genre>
+   <genre>journal article</genre>
    <originInfo>
       <place>
          <placeTerm>Baltimore, Md.</placeTerm>
@@ -29,4 +29,43 @@
       <extent>15 p.</extent>
    </physicalDescription>
    <abstract>Academic libraries need to change their recruiting and hiring procedures to stay competitive in today's changing marketplace. By taking too long to find and to hire talented professionals in a tight labor market, academic libraries are losing out on top candidates and limiting their ability to become innovative and dynamic organizations. Traditional, deliberate, and risk-averse hiring models lead to positions remaining open for long periods, opportunities lost as top prospects find other positions, and a reduction in the overall talent level of the organization. To be more competitive and effective in their recruitment and hiring processes, academic libraries must foster manageable internal solutions, look to other professions for effective hiring techniques and models, and employ innovative concepts from modern personnel management literature. </abstract>
-   <subject authority="">College librarians
+   <subject>
+      <topic>College librarians</topic>
+      <topic>Recruiting</topic>
+      <geographic>United States</geographic>
+   </subject>
+   <subject>
+      <topic>College librarians</topic>
+      <topic>Selection and appointment</topic>
+      <geographic>United States</geographic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>portal: libraries and the academy</title>
+      </titleInfo>
+      <identifier type="issn">1531-2542</identifier>&gt;
+        <part>
+         <detail type="volume">
+            <number>3</number>
+            <caption>vol.</caption>
+         </detail>
+         <detail type="number">
+            <number>1</number>
+            <caption>no.</caption>
+         </detail>
+         <extent unit="page">
+            <start>53</start>
+            <end>57</end>
+         </extent>
+         <date>Jan. 2003</date>
+      </part>
+   </relatedItem>
+   <!--NAL extension template-->
+   <extension>
+      <vendorName/>
+      <archiveFile>lc_example_mods.xml</archiveFile>
+      <originalFile>lc_example_mods</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Contacts/Desktop/xsl/sruQuery/example_xml/</workingDirectory>
+      <filePath>file:/C:/Users/carlos.martinez/Contacts/Desktop/xsl/sruQuery/example_xml/lc_example_mods.xml</filePath>
+   </extension>
+</mods>

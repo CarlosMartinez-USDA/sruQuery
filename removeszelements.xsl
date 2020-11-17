@@ -13,7 +13,7 @@
     <xsl:output name="archiveFile" method="xml" indent="yes" encoding="UTF-8" media-type="text/xml" version="1.0"/> 
         
     
-<!--<xsl:include href="commons/common.xsl"/>-->
+    <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/params.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
     <xsl:include href="commons/iso-639_1_to_iso-639_2b.xsl"/>
@@ -179,7 +179,9 @@
     </xd:doc>
     <xsl:template match="mods:genre" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <genre>
+            <xsl:if test="@authority">
             <xsl:attribute name="authority" select="@authority"/>
+            </xsl:if>
             <xsl:value-of select="."/>
         </genre>
     </xsl:template>
@@ -392,12 +394,16 @@
             <xsl:if test="normalize-space(.) != ''">
                 <xsl:for-each select="geographicCode">
                     <geographicCode>
+                        <xsl:if test="@authority">
                         <xsl:attribute name="authority" select="@authority"/>
+                        </xsl:if>
                         <xsl:value-of select="."/>
                     </geographicCode>
                 </xsl:for-each>
                 <xsl:if test="topic or geographic">
+                    <xsl:if test="@authority">
                     <xsl:attribute name="authority" select="@authority"/>
+                    </xsl:if>
                     <xsl:sequence select="topic[position()] | geographic"/>
                 </xsl:if>
             </xsl:if>
@@ -448,6 +454,7 @@
             <xsl:apply-templates select="titleInfo"/>
             <xsl:apply-templates select="identifier"/>
             </xsl:if>
+            <xsl:apply-templates select="mods:part" xpath-default-namespace="http://www.loc.gov/mods/v3"/>
         </relatedItem>
     </xsl:template>
 
@@ -590,7 +597,37 @@
             <xsl:value-of select="."/>
         </targetAudience>
     </xsl:template>
-
+    
+    <xd:doc>
+        <xd:desc>mods:part</xd:desc>
+    </xd:doc>
+    <xsl:template match="mods:part" xpath-default-namespace="http://www.loc.gov/mods/v3">>
+        <part>
+        <xsl:for-each select="detail">
+        <detail>
+            <xsl:attribute name="type" select="@type"/>
+            <number>
+                <xsl:value-of select="number"/>
+            </number>
+            <caption>
+                <xsl:value-of select="caption"/>
+            </caption>
+        </detail>
+        </xsl:for-each>
+        <xsl:for-each select="extent">            
+        <extent>
+            <xsl:attribute name="unit" select="@unit"/>
+            <start>
+                <xsl:value-of select="start"/>
+            </start>
+            <end>
+                <xsl:value-of select="end"/>
+            </end>
+        </extent>
+        <date>Jan. 2003</date>
+        </xsl:for-each>
+        </part>       
+    </xsl:template>
     <xd:doc>
         <xd:desc>
             <xd:p><xd:b>mods:recordInfo</xd:b> - is a container element that includes subelements relating to information 
