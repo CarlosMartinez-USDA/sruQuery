@@ -36,20 +36,20 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <!-- <xsl:template match="zs:name">
+     <xsl:template match="zs:name">
         <xsl:element name="{local-name()}">
             <xsl:apply-templates/>
         </xsl:element>
-    </xsl:template>-->
+    </xsl:template>
     <xd:doc>
         <xd:desc/>
-    </xd:doc><!--
+    </xd:doc>
        <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="node() | @*"/>
         </xsl:copy>
     </xsl:template>
--->
+
 
 
     <xd:doc>
@@ -453,8 +453,8 @@
             <xsl:if test="normalize-space(.) !=' '">
             <xsl:apply-templates select="titleInfo"/>
             <xsl:apply-templates select="identifier"/>
+            <xsl:apply-templates select="mods:part"/>
             </xsl:if>
-            <xsl:apply-templates select="mods:part" xpath-default-namespace="http://www.loc.gov/mods/v3"/>
         </relatedItem>
     </xsl:template>
 
@@ -473,26 +473,26 @@
     </xd:doc>
     <xsl:template match="mods:location" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <location>
-         <xsl:choose>
-             <xsl:when test="physicalLocation">
+        <!-- <xsl:choose>-->
+             <xsl:for-each select="physicalLocation">
              <physicalLocation>
-                        <xsl:namespace name="xlink" select="'http://www.w3.org/1999/xlink'"/>
-                        <xsl:attribute name="xlink:href" select="physicalLocation/@xlink:href"/>
-                        <xsl:value-of select="."/>     
-             </physicalLocation>          
-             </xsl:when>              
-         </xsl:choose>
-               <xsl:for-each select="mods:url">
+                 <xsl:if test="@xlink:href">
+                <xsl:attribute name="xlink:href" select="@xlink:href"/>
+                 </xsl:if>
+                 <xsl:value-of select="."/>
+             </physicalLocation>    
+             </xsl:for-each>              
+         <!--</xsl:choose>-->
+               <xsl:for-each select="url">
                    <url>
-                       <xsl:if test="url/@usage">
-                        <xsl:attribute name="usage" select="url/@usage"/>
+                       <xsl:if test="@usage">
+                        <xsl:attribute name="usage" select="@usage"/>
                        </xsl:if>
-                       <xsl:if test="url/@displayLabel">
-                        <xsl:attribute name="displayLabel" select="url/@displayLabel"/>
+                       <xsl:if test="@displayLabel">
+                        <xsl:attribute name="displayLabel" select="@displayLabel"/>
                        </xsl:if>
                        <xsl:value-of select="."/>
-                   </url>              
-                <xsl:value-of select="."/>
+                   </url>                              
                </xsl:for-each>                                
         </location>
     </xsl:template>
@@ -596,6 +596,21 @@
             </xsl:choose>
             <xsl:value-of select="."/>
         </targetAudience>
+    </xsl:template>
+    
+    <xd:doc>
+        <xd:desc/>
+    </xd:doc>
+    <xsl:template match="mods:accessCondition" xpath-default-namespace="http://www.loc.gov/mods/v3">
+        <accessCondition>
+            <xsl:if test="@type">
+            <xsl:attribute name="type" select="@type"/>
+            </xsl:if>
+            <xsl:if test="@displayLabel">
+            <xsl:attribute name="displayLabel" select="@displayLabel"/>
+            </xsl:if>
+            <xsl:value-of select="."/>
+        </accessCondition>
     </xsl:template>
     
     <xd:doc>
