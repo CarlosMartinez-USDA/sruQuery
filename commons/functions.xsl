@@ -142,58 +142,46 @@
                     <xd:i>f:format-case</xd:i>function in both instances</xd:p>
         </xd:desc>
         <xd:param name="arg"/>
-    </xd:doc>
-    <xd:doc>
-        <xd:desc/>
-        <xd:param name="arg"/>
-
-    </xd:doc>
+    </xd:doc>    
     <xsl:function name="f:formatNames">
         <xsl:param name="arg" as="xs:string?"/>
         <xsl:variable name="nonBreakingWhitespace">&#32;</xsl:variable>
 <!--        <xsl:variable name="nonBreakingWhitespace" select="' '"/>-->
         <xsl:variable name="whitespace">&#160;</xsl:variable>
         <xsl:variable name="hyphen">&#45;</xsl:variable>
-        <!--choose when-->
-        <xsl:choose>
-            
+        <!--Tests -->
+        <xsl:choose>          
             <xsl:when test="(matches($arg, $nonBreakingWhitespace))">
                 <xsl:variable name="substring1" select="substring-before($arg,$nonBreakingWhitespace)"/>
-                <xsl:variable name="substring2" select="substring-after($arg,$nonBreakingWhitespace)"/>
-                
+                <xsl:variable name="substring2" select="substring-after($arg,$nonBreakingWhitespace)"/>                
                 <xsl:sequence
                     select="
                     if (matches($arg,$nonBreakingWhitespace))
                     then
                     concat(f:format-case($substring1), ($nonBreakingWhitespace), (f:format-case($substring2)))
                     else
-                    $arg"
-                />
+                    $arg"/>
             </xsl:when>
             <xsl:when test="(matches($arg, $whitespace))">
                 <xsl:variable name="substring1" select="substring-before($arg, $whitespace)"/>
                 <xsl:variable name="substring2" select="substring-after($arg, $whitespace)"/>
-
                 <xsl:sequence
                     select="
                         if (matches($arg, $whitespace))
                         then concat(f:format-case($substring1), ($whitespace), (f:format-case($substring2)))
                         else 
-                        $arg"
-                />
+                        $arg"/>
             </xsl:when>
             <xsl:when test="(matches($arg, $hyphen))">
                 <xsl:variable name="substring1" select="substring-before($arg, $hyphen)"/>
-                <xsl:variable name="substring2" select="substring-after($arg, $hyphen)"/>
-                
+                <xsl:variable name="substring2" select="substring-after($arg, $hyphen)"/>              
                 <xsl:sequence
                     select="
                     if (matches($arg, $hyphen))
                     then
                     concat(f:format-case($substring1), ($hyphen), (f:format-case($substring2)))
                     else
-                    $arg"
-                />
+                    $arg"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="f:format-case($arg)"/>

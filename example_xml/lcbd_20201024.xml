@@ -5,10 +5,10 @@
                version=1.1&
                operation=searchRetrieve
                &query=United+States+Department+of+Agriculture
-               &startRecord=201&maximumRecords=100
+               &startRecord=10&maximumRecords=10
                &recordSchema=mods
     
-   Full Query URL: http://lx2.loc.gov:210/lcdb?version=1.1&operation=searchRetrieve&query=United+States+Department+of+Agriculture&startRecord=201maximumRecords=100&recordSchema=mods
+   Full Query URL: http://lx2.loc.gov:210/lcdb?version=1.1&operation=searchRetrieve&query=United+States+Department+of+Agriculture&startRecord=10&maximumRecords=10&recordSchema=mods
   -->
   <zs:version>1.1</zs:version>
   <zs:numberOfRecords>10000</zs:numberOfRecords>

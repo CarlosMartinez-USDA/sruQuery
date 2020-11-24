@@ -13,7 +13,7 @@
     <xsl:output name="archiveFile" method="xml" indent="yes" encoding="UTF-8" media-type="text/xml" version="1.0"/> 
         
     
-<!--<xsl:include href="commons/common.xsl"/>-->
+    <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/params.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
     <xsl:include href="commons/iso-639_1_to_iso-639_2b.xsl"/>
@@ -36,27 +36,27 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <!-- <xsl:template match="zs:name">
+     <xsl:template match="zs:name">
         <xsl:element name="{local-name()}">
             <xsl:apply-templates/>
         </xsl:element>
-    </xsl:template>-->
+    </xsl:template>
     <xd:doc>
         <xd:desc/>
-    </xd:doc><!--
+    </xd:doc>
        <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="node() | @*"/>
         </xsl:copy>
     </xsl:template>
--->
+
 
 
     <xd:doc>
         <xd:desc/>
     </xd:doc>
     <xsl:template match="/">
-        <zs:searchRetrieveResponse>
+        <zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/">
             <modsCollection>
                 <xsl:for-each select="*//mods" xpath-default-namespace="http://www.loc.gov/mods/v3">                   
                     <zs:records>
@@ -71,6 +71,7 @@
                         media-type="text/xml" format="originalFile"
                         href="{$workingDir}N-{$originalFilename}_{position()}.xml">
                         <mods>
+                            <xsl:namespace name="zs" select="'http://www.loc.gov/zing/srw/'"/>
                             <xsl:namespace name="xlink" select="'http://www.w3.org/1999/xlink'"/>
                             <xsl:namespace name="xsi" select="'http://www.w3.org/2001/XMLSchema-instance'"/>
                             <xsl:attribute name="xsi:schemaLocation" select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
@@ -178,7 +179,9 @@
     </xd:doc>
     <xsl:template match="mods:genre" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <genre>
+            <xsl:if test="@authority">
             <xsl:attribute name="authority" select="@authority"/>
+            </xsl:if>
             <xsl:value-of select="."/>
         </genre>
     </xsl:template>
@@ -391,12 +394,16 @@
             <xsl:if test="normalize-space(.) != ''">
                 <xsl:for-each select="geographicCode">
                     <geographicCode>
+                        <xsl:if test="@authority">
                         <xsl:attribute name="authority" select="@authority"/>
+                        </xsl:if>
                         <xsl:value-of select="."/>
                     </geographicCode>
                 </xsl:for-each>
                 <xsl:if test="topic or geographic">
+                    <xsl:if test="@authority">
                     <xsl:attribute name="authority" select="@authority"/>
+                    </xsl:if>
                     <xsl:sequence select="topic[position()] | geographic"/>
                 </xsl:if>
             </xsl:if>
@@ -446,6 +453,7 @@
             <xsl:if test="normalize-space(.) !=' '">
             <xsl:apply-templates select="titleInfo"/>
             <xsl:apply-templates select="identifier"/>
+            <xsl:apply-templates select="mods:part"/>
             </xsl:if>
         </relatedItem>
     </xsl:template>
@@ -465,33 +473,27 @@
     </xd:doc>
     <xsl:template match="mods:location" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <location>
-         <xsl:choose>
-             <xsl:when test="physicalLocation">
+        <!-- <xsl:choose>-->
+             <xsl:for-each select="physicalLocation">
              <physicalLocation>
-               
-                    <physicalLocation>
-                        <xsl:namespace name="xlink" select="'http://www.w3.org/1999/xlink'"/>
-                        <xsl:attribute name="xlink:href" select="@xlink:href"/>
-                        <xsl:value-of select="."/>                        
-                    </physicalLocation>
-                   
-             </physicalLocation>          
-             </xsl:when>
-
-                
-               <xsl:when test="url">
+                 <xsl:if test="@xlink:href">
+                <xsl:attribute name="xlink:href" select="@xlink:href"/>
+                 </xsl:if>
+                 <xsl:value-of select="."/>
+             </physicalLocation>    
+             </xsl:for-each>              
+         <!--</xsl:choose>-->
+               <xsl:for-each select="url">
                    <url>
-                       <xsl:if test="url/@usage">
-                        <xsl:attribute name="usage" select="url/@usage"/>
+                       <xsl:if test="@usage">
+                        <xsl:attribute name="usage" select="@usage"/>
                        </xsl:if>
-                       <xsl:if test="url/@displayLabel">
-                        <xsl:attribute name="displayLabel" select="url/@displayLabel"/>
+                       <xsl:if test="@displayLabel">
+                        <xsl:attribute name="displayLabel" select="@displayLabel"/>
                        </xsl:if>
                        <xsl:value-of select="."/>
-                   </url>              
-                <xsl:value-of select="."/>
-               </xsl:when>                           
-        </xsl:choose>    
+                   </url>                              
+               </xsl:for-each>                                
         </location>
     </xsl:template>
 
@@ -595,7 +597,52 @@
             <xsl:value-of select="."/>
         </targetAudience>
     </xsl:template>
-
+    
+    <xd:doc>
+        <xd:desc/>
+    </xd:doc>
+    <xsl:template match="mods:accessCondition" xpath-default-namespace="http://www.loc.gov/mods/v3">
+        <accessCondition>
+            <xsl:if test="@type">
+            <xsl:attribute name="type" select="@type"/>
+            </xsl:if>
+            <xsl:if test="@displayLabel">
+            <xsl:attribute name="displayLabel" select="@displayLabel"/>
+            </xsl:if>
+            <xsl:value-of select="."/>
+        </accessCondition>
+    </xsl:template>
+    
+    <xd:doc>
+        <xd:desc>mods:part</xd:desc>
+    </xd:doc>
+    <xsl:template match="mods:part" xpath-default-namespace="http://www.loc.gov/mods/v3">>
+        <part>
+        <xsl:for-each select="detail">
+        <detail>
+            <xsl:attribute name="type" select="@type"/>
+            <number>
+                <xsl:value-of select="number"/>
+            </number>
+            <caption>
+                <xsl:value-of select="caption"/>
+            </caption>
+        </detail>
+        </xsl:for-each>
+        <xsl:for-each select="extent">            
+        <extent>
+            <xsl:attribute name="unit" select="@unit"/>
+            <start>
+                <xsl:value-of select="start"/>
+            </start>
+            <end>
+                <xsl:value-of select="end"/>
+            </end>
+        </extent>
+        <date>Jan. 2003</date>
+        </xsl:for-each>
+        </part>       
+    </xsl:template>
     <xd:doc>
         <xd:desc>
             <xd:p><xd:b>mods:recordInfo</xd:b> - is a container element that includes subelements relating to information 

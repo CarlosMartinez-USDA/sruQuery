@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<modsCollection xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd">
-    
+<modsCollection xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/mods/v3"
+    xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd">
+
     <mods version="3.3">
-        
+
         <titleInfo>
             <title>Hiring and recruitment practices in academic libraries</title>
         </titleInfo>
@@ -21,7 +23,9 @@
             <dateIssued>2003</dateIssued>
             <issuance>monographic</issuance>
         </originInfo>
-        <language><languageTerm authority="iso639-2b">eng</languageTerm></language>
+        <language>
+            <languageTerm authority="iso639-2b">eng</languageTerm>
+        </language>
         <physicalDescription>
             <form authority="marcform">print</form>
             <extent>15 p.</extent>
@@ -59,5 +63,5 @@
             <identifier type="issn">1531-2542</identifier>
         </relatedItem>
     </mods>
-    
+
 </modsCollection>

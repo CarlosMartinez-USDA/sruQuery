@@ -5,54 +5,58 @@
     xmlns:zs="http://www.loc.gov/zing/srw/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:saxon="http://saxon.sf.net/" xmlns:xlink="http://www.w3.org/1999/xlink"
     xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
-    exclude-result-prefixes="xs xd saxon zs xsi f #default" version="2.0">
-
+    exclude-result-prefixes="#all" version="2.0">
+    
+    <xd:doc scope="stylesheet">
+        <xd:desc> 
+            <xd:p><xd:b>Created on:</xd:b>Sept 12, 2020</xd:p>
+            <xd:p><xd:em>Modified on</xd:em></xd:p>
+            <xd:p><xd:b>Author:</xd:b> Carlos.Martinez</xd:p>
+            <xd:ul><xd:p>This stylesheet parses an SRU Query result into two documents:</xd:p>
+                <xd:li>The first being an archival copy of the original source metadata, and</xd:li>
+                <xd:li>The second a transformed version.</xd:li></xd:ul>
+            <xd:p>This transform uses the "pull" method of XSLT programming, making it, or some of its components
+            customizable to institutional needs and usage.</xd:p>
+        </xd:desc>
+    </xd:doc>
+    
+       <xd:doc scope="component">
+        <xd:desc>
+            <xd:p>Strips each element of extra whitespace</xd:p>
+        </xd:desc>
+    </xd:doc>
     <xsl:strip-space elements="*"/>
 
+ <xd:doc scope="component">
+    <xd:desc>
+        <xd:p>There are two outputs for both the archival copy and the transformed XML.</xd:p>
+        <xd:ul>
+            <xd:li>
+                <xd:p><xd:b>archiveFile:</xd:b> An archival copy of the source metadata</xd:p>
+            </xd:li>
+            <xd:li>
+                    <xd:b>originalFile</xd:b> A transformed version that allows for customization. </xd:li>
+        </xd:ul>
+    </xd:desc>
+</xd:doc>
     <xsl:output name="originalFile" method="xml" indent="yes" encoding="UTF-8" media-type="text/xml" version="1.0"/>   
     <xsl:output name="archiveFile" method="xml" indent="yes" encoding="UTF-8" media-type="text/xml" version="1.0"/> 
         
     
+     <xd:doc scope="component">
+        <xd:desc>
+            <xd:p>External stylesheets:</xd:p>
+            <xd:ul>
+                <xd:li><xd:a href="commons/common.xsl">common.xsl</xd:a></xd:li>
+                <xd:li><xd:a href="commons/params.xsl">params.xsl</xd:a></xd:li>
+            </xd:ul>
+        </xd:desc>
+        
+    </xd:doc>
     <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/params.xsl"/>
-    <xsl:include href="commons/functions.xsl"/>
-    <xsl:include href="commons/iso-639_1_to_iso-639_2b.xsl"/>
-
-
-
-    <xd:doc scope="stylesheet">
-        <xd:desc>
-            <xd:p><xd:b>Created on:</xd:b>ar 12, 2020</xd:p>
-            <xd:p><xd:b>Author:</xd:b> Carlos.Martinez</xd:p>
-            <xd:p/>
-        </xd:desc>
-    </xd:doc>
-
-
-    <!-- <xsl:template match="/">
-        <xsl:apply-templates/>
-    </xsl:template>-->
-
-    <xd:doc>
-        <xd:desc/>
-    </xd:doc>
-     <xsl:template match="zs:name">
-        <xsl:element name="{local-name()}">
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
-    <xd:doc>
-        <xd:desc/>
-    </xd:doc>
-       <xsl:template match="@* | node()">
-        <xsl:copy>
-            <xsl:apply-templates select="node() | @*"/>
-        </xsl:copy>
-    </xsl:template>
-
-
-
-    <xd:doc>
+ 
+     <xd:doc scope="component">
         <xd:desc/>
     </xd:doc>
     <xsl:template match="/">
@@ -74,8 +78,8 @@
                             <xsl:namespace name="zs" select="'http://www.loc.gov/zing/srw/'"/>
                             <xsl:namespace name="xlink" select="'http://www.w3.org/1999/xlink'"/>
                             <xsl:namespace name="xsi" select="'http://www.w3.org/2001/XMLSchema-instance'"/>
-                            <xsl:attribute name="xsi:schemaLocation" select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
-                            <xsl:attribute name="version" select="'3.7'"/>
+                            <xsl:attribute name="xsi:schemaLocation" select="@xsi:schemaLocation"/>
+                            <xsl:attribute name="version" select="@version"/>
                             <xsl:apply-templates select="mods:titleInfo"/>
                             <xsl:apply-templates select="mods:name"/>
                             <xsl:apply-templates select="mods:typeOfResource"/>
@@ -105,7 +109,7 @@
     </xsl:template>
 
     <!--titleInfo-->
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc>
             <xd:a docid="titleInfo_id"> titleInfo</xd:a>
         </xd:desc>
@@ -148,7 +152,7 @@
         </titleInfo>
     </xsl:template>
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc/>
     </xd:doc>
     <xsl:template match="mods:name" xpath-default-namespace="http://www.loc.gov/mods/v3">
@@ -165,7 +169,7 @@
         </name>
     </xsl:template>
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc/>
     </xd:doc>
     <xsl:template match="mods:typeOfResource" xpath-default-namespace="http://www.loc.gov/mods/v3">
@@ -174,8 +178,10 @@
         </typeOfResource>
     </xsl:template>
 
-    <xd:doc>
-        <xd:desc/>
+     <xd:doc scope="component">
+        <xd:desc>
+            <xd:p><xd:b>Definition:</xd:b> A term(s) that designates a category characterizing a particular style, form, or content, such as artistic, musical, literary composition, etc.</xd:p> 
+            <xd:p><xd:b>Application:</xd:b> "genre" contains terms that give more specificity than the broad terms used in <![CDATA[<typeOfResource>]]>. The terms may be from a sdcontrolled list with a designation of the authoritative list used in the authority attribute, or it may be an uncontrolled term. If no authority is specified, it is assumed that the term is uncontrolled.</xd:p></xd:desc>
     </xd:doc>
     <xsl:template match="mods:genre" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <genre>
@@ -186,7 +192,7 @@
         </genre>
     </xsl:template>
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc/>
     </xd:doc>
     <xsl:template match="mods:originInfo" xpath-default-namespace="http://www.loc.gov/mods/v3">
@@ -299,7 +305,7 @@
         </originInfo>
     </xsl:template>
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc>MODS language tag</xd:desc>
     </xd:doc>
     <xsl:template match="mods:language" xpath-default-namespace="http://www.loc.gov/mods/v3">
@@ -317,7 +323,7 @@
     </xsl:template>
 
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc/>
     </xd:doc>
     <xsl:template match="mods:physicalDescription" xpath-default-namespace="http://www.loc.gov/mods/v3">
@@ -353,11 +359,11 @@
                     <xsl:value-of select="digitalOrigin"/>
                 </digitalOrigin>
             </xsl:if>    
-            <xsl:if test="note">    
-                <xsl:if test="note/@type">
-                    <xsl:attribute name="type" select="form/@type"/>
-                </xsl:if>
+            <xsl:if test="note">  
                 <note>
+                <xsl:if test="@type">
+                    <xsl:attribute name="type" select="@type"/>
+                </xsl:if>
                     <xsl:value-of select="note"/>
                 </note>
             </xsl:if>
@@ -365,7 +371,7 @@
     </xsl:template>
 
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc/>
     </xd:doc>
     <xsl:template match="mods:note" xpath-default-namespace="http://www.loc.gov/mods/v3">
@@ -385,7 +391,7 @@
         </note>
     </xsl:template>
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc/>
 
     </xd:doc>
@@ -410,7 +416,7 @@
         </subject>
     </xsl:template>
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc/></xd:doc>
     <xsl:template match="mods:classification" xpath-default-namespace="http://www.loc.gov/mods/v3">
         <classification>
@@ -442,7 +448,7 @@
         </classification>
     </xsl:template>
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc/>
     </xd:doc>
     <xsl:template match="mods:relatedItem" xpath-default-namespace="http://www.loc.gov/mods/v3">
@@ -458,7 +464,7 @@
         </relatedItem>
     </xsl:template>
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc/>
     </xd:doc>
     <xsl:template match="mods:identifier" xpath-default-namespace="http://www.loc.gov/mods/v3">
@@ -468,7 +474,7 @@
         </identifier>
     </xsl:template>
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc/>
     </xd:doc>
     <xsl:template match="mods:location" xpath-default-namespace="http://www.loc.gov/mods/v3">
@@ -497,7 +503,7 @@
         </location>
     </xsl:template>
 
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc>
             <!--Language-related: lang; xml:lang; script; transliteration
                 Internal Linking: altRepGroup
@@ -531,7 +537,7 @@
             <xsl:value-of select="."/>
         </abstract>
     </xsl:template>
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc>
             <xd:p>mods:tableOfContents</xd:p>
         </xd:desc>
@@ -565,7 +571,7 @@
         </tableOfContents>
     </xsl:template>
     
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc>
             <xd:p>mods:targetAudience</xd:p>
         </xd:desc>
@@ -598,7 +604,7 @@
         </targetAudience>
     </xsl:template>
     
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc/>
     </xd:doc>
     <xsl:template match="mods:accessCondition" xpath-default-namespace="http://www.loc.gov/mods/v3">
@@ -613,7 +619,7 @@
         </accessCondition>
     </xsl:template>
     
-    <xd:doc>
+     <xd:doc scope="component">
         <xd:desc>mods:part</xd:desc>
     </xd:doc>
     <xsl:template match="mods:part" xpath-default-namespace="http://www.loc.gov/mods/v3">>
@@ -643,7 +649,8 @@
         </xsl:for-each>
         </part>       
     </xsl:template>
-    <xd:doc>
+    
+     <xd:doc scope="component">
         <xd:desc>
             <xd:p><xd:b>mods:recordInfo</xd:b> - is a container element that includes subelements relating to information 
                 necessary for managing metadata. This type of administrative information can help establish 

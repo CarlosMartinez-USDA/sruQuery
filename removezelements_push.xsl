@@ -2,13 +2,11 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.loc.gov/mods/v3"
     xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:f="http://functions/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-    xmlns:zs="http://www.loc.gov/zing/srw/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:saxon="http://saxon.sf.net/" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:zs="http://www.loc.gov/zing/srw/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
-    exclude-result-prefixes="xs xd saxon zs xsi f #default" version="2.0">
-    <xsl:param name="ver" xpath-default-namespace="http://www.loc.gov/mods/v3" as="xs:decimal">
-        <xsl:sequence select="*//mods/@version"/>
-    </xsl:param>
+    exclude-result-prefixes="#all" version="2.0">
+    
+   
     <xsl:strip-space elements="*"/>
     
     <xsl:output name="originalFile" method="xml" indent="yes" encoding="UTF-8" media-type="text/xml" version="1.0"/>   
@@ -17,8 +15,11 @@
     
     <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/params.xsl"/>
-    <xsl:include href="commons/functions.xsl"/>
-    <xsl:include href="commons/iso-639_1_to_iso-639_2b.xsl"/>
+  
+  
+  <!-- Uses XSLT "push" programming to accomplish a similar goal without as much effort. The caveat is there is no room for customization.
+      -->
+
     
     
     
@@ -30,34 +31,18 @@
         </xd:desc>
     </xd:doc>
     
-    
-    <!-- <xsl:template match="/">
-        <xsl:apply-templates/>
-    </xsl:template>-->
-    
     <xd:doc>
-        <xd:desc/>
+        <xd:desc>mods default template</xd:desc>
     </xd:doc>
-    <xsl:template match="zs:name">
-        <xsl:element name="{local-name()}">
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
+    <xsl:template match="mods" xpath-default-namespace="http://www.loc.gov/mods/v3"/>
+      
     <xd:doc>
-        <xd:desc/>
+        <xd:desc>sru template </xd:desc>
     </xd:doc>
-    <xsl:template match="@* | node()">
-        <xsl:copy>
-            <xsl:apply-templates select="node() | @*"/>
-        </xsl:copy>
-    </xsl:template>
-    
-   
-    
-    
+    <xsl:template match="zs:name" xpath-default-namespace="http://www.loc.gov/zing/srw/"/>
+         
     <xd:doc>
-        <xd:desc/>
-        <xd:param name="version"/>
+        <xd:desc>root template</xd:desc>      
     </xd:doc>
     <xsl:template match="/">  
         <zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/">
@@ -72,13 +57,14 @@
                         </xsl:result-document>
                     </zs:records>
                     <xsl:result-document encoding="UTF-8" indent="yes" method="xml"
-                        media-type="text/xml" format="originalFile"                        href="{$workingDir}N-{$originalFilename}_{position()}.xml">
+                        media-type="text/xml" format="originalFile"
+                        href="{$workingDir}N-{$originalFilename}_{position()}.xml">
                         <mods>
                             <xsl:namespace name="zs" select="'http://www.loc.gov/zing/srw/'"/>
                             <xsl:namespace name="xlink" select="'http://www.w3.org/1999/xlink'"/>
-                            <xsl:namespace name="xsi" select="'http://www.w3.org/2001/XMLSchema-instance'"/>
-                            <xsl:attribute name="xsi:schemaLocation" select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
-                            <xsl:attribute name="version" select="$ver"/>
+                            <xsl:namespace name="xsi" select="'http://www.w3.org/2001/XMLSchema-instance'"/>                                                       
+                            <xsl:attribute name="version" select="@version"/>
+                            <xsl:attribute name="xsi:schemaLocation" select="@xsi:schemaLocation"/>
                             <xsl:apply-templates select="mods:titleInfo"/>
                             <xsl:apply-templates select="mods:name"/>
                             <xsl:apply-templates select="mods:typeOfResource"/>
