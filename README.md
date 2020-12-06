@@ -19,7 +19,7 @@ LC's MODS records provide a level of detail and description that surpasses other
     
    Full Query URL: http://lx2.loc.gov:210/lcdb?version=1.1&operation=searchRetrieve&query=United+States+Department+of+Agriculture&startRecord=10&maximumRecords=10&recordSchema=mods
 
-For more SRU Query examples check out [SRU is Simple](https://github.com/CarlosMtz3/sruQuery/wiki/SRU-is-Simple) on the wiki
+For more SRU Query examples check out [SRU is Simple](https://github.com/CarlosMtz3/sruQuery/wiki/SRU-is-Simple) on the [wiki](
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2OTI5MzQ2OCwtMTcxMTcxMDQ4MV19
+eyJoaXN0b3J5IjpbMTM4Mzk5MTIyLC0xNzExNzEwNDgxXX0=
 -->
